@@ -8,9 +8,11 @@
 
 int main() {
     exponentialFuncionalTest();
+    cout << "\t[+] Passou pelo teste exponencial!\n" << endl;
     logisticalFuncionalTest();
+    cout << "\t[+] Passou pelo teste logistico!\n" << endl;
     complexFuncionalTest();
-    cout << "\t[+] Passou pelos testes funcionais!\n" << endl;
+    cout << "\t[+] Passou por todos testes funcionais!\n" << endl;
     return true;
 }
 
