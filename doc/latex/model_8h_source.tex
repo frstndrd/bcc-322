@@ -1,0 +1,57 @@
+\hypertarget{model_8h_source}{}\doxysection{model.\+h}
+\label{model_8h_source}\index{src/model.h@{src/model.h}}
+\mbox{\hyperlink{model_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ MODEL\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ MODEL\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <cstring>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <ostream>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{flow_8h}{flow.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{comment}{//\#include\ "{}flowExponential.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{comment}{//\#include\ "{}flowLogistic.h"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{system_8h}{system.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{model_8h}{model.h}}"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_model}{Model}}\ \{}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_model_a2d9aef6a80a205a03e4e99b5483af9a0}{name}};}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ vector<Flow*>\ \mbox{\hyperlink{class_model_aa76c9411f1cf6da6f4c696b2feadcb1a}{flows}};}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ vector<System*>\ \mbox{\hyperlink{class_model_ac7dea8829149e597d2671dbc0a538bf7}{systems}};}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_model_ae3b375de5f6df4faf74a95d64748e048}{Model}}(\mbox{\hyperlink{class_model}{Model}}\&\ obj);}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_model}{Model}}\&\ operator=\ (\textcolor{keyword}{const}\ \mbox{\hyperlink{class_model}{Model}}\&\ obj);}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_model_ae3b375de5f6df4faf74a95d64748e048}{Model}}();}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_model_ae3b375de5f6df4faf74a95d64748e048}{Model}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_model_a2d9aef6a80a205a03e4e99b5483af9a0}{name}});}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_model_ae3b375de5f6df4faf74a95d64748e048}{Model}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_model_a2d9aef6a80a205a03e4e99b5483af9a0}{name}},\ vector<Flow*>\ \&\mbox{\hyperlink{class_model_aa76c9411f1cf6da6f4c696b2feadcb1a}{flows}},\ vector<System*>\ \&\mbox{\hyperlink{class_model_ac7dea8829149e597d2671dbc0a538bf7}{systems}});}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_model_ad6ebd2062a0b823db841a0b88baac4c0}{\string~Model}}();}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keyword}{typename}\ vector<Flow*>\ ::\ iterator\ \mbox{\hyperlink{class_model_a39b5d97e71ee3fae373e7a1554fc26e8}{itFlow}};}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keyword}{typename}\ vector<System*>\ ::\ iterator\ \mbox{\hyperlink{class_model_a34ecd4402511748377eec2270b795e5b}{itSystem}};}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_model_a65e1711255fbab5883708002ef89f773}{getName}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_model_a79ee6699ac4a15fb4dd9a9d5802249c5}{setName}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_model_a2d9aef6a80a205a03e4e99b5483af9a0}{name}});}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_model_a39b5d97e71ee3fae373e7a1554fc26e8}{itFlow}}\ \mbox{\hyperlink{class_model_a4053235a338aed17479456fe2308080c}{getFlowBegin}}();}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_model_a39b5d97e71ee3fae373e7a1554fc26e8}{itFlow}}\ \mbox{\hyperlink{class_model_a6a044354185b1a4a28518fda0e14b342}{getFlowEnd}}();}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_model_aadf7bc7921bb4d08ef114333ca1a3d01}{getFlowSize}}();}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_model_a34ecd4402511748377eec2270b795e5b}{itSystem}}\ \mbox{\hyperlink{class_model_a54c0a0bc341c0305f775f0de79917711}{getSystemBegin}}();}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_model_a34ecd4402511748377eec2270b795e5b}{itSystem}}\ \mbox{\hyperlink{class_model_ae1c3c8cf59285f988c4cf5e5d28091c1}{getSystemEnd}}();}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_model_a3667a13e71300ba867d4d370533c7c8c}{getSystemSize}}();}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_model_ae4d749689ba490e2a74d64bb10721a94}{add}}(\mbox{\hyperlink{class_system}{System}}*);}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_model_ae4d749689ba490e2a74d64bb10721a94}{add}}(\mbox{\hyperlink{class_flow}{Flow}}*);}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_model_a1ef4eeb098d8e3ac58eac97295468674}{remove}}(\mbox{\hyperlink{class_system}{System}}*);}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_model_a1ef4eeb098d8e3ac58eac97295468674}{remove}}(\mbox{\hyperlink{class_flow}{Flow}}*);}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_model_a7b8102ec95ed8796b01501bf054a3330}{clear}}();}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_model_ae30ecc31e31c20868d4227b7d77b3636}{show}}();}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_model_aef5a574647152d4252ad054d9604f4bb}{run}}(\textcolor{keywordtype}{int},\ \textcolor{keywordtype}{int},\ \textcolor{keywordtype}{int});\ \ \ \ }
+\DoxyCodeLine{00049\ \};}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

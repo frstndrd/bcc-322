@@ -1,0 +1,8 @@
+<map id="Flow::getSource" name="Flow::getSource">
+<area shape="rect" id="node1" title=" " alt="" coords="273,104,389,129"/>
+<area shape="rect" id="node2" href="$class_flow.html#acc51cf4150304f40fcead064e62cc926" title=" " alt="" coords="73,5,157,31"/>
+<area shape="rect" id="node3" href="$class_flow_exponential.html#af14aa7f0e163902ec14d897d2616a216" title=" " alt="" coords="5,55,225,80"/>
+<area shape="rect" id="node4" href="$class_flow_logistical.html#a067c163c74b0e37b7441aa57b4e28bc2" title=" " alt="" coords="18,104,213,129"/>
+<area shape="rect" id="node5" href="$class_flow.html#a21f26edbbb55b1c8312d0836153c08a9" title=" " alt="" coords="59,153,171,179"/>
+<area shape="rect" id="node6" href="$class_flow.html#a59f6cdbe086d9604e5d11c540a618667" title=" " alt="" coords="55,203,175,228"/>
+</map>
