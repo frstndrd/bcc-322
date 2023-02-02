@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['remove_0',['remove',['../class_model.html#a1ef4eeb098d8e3ac58eac97295468674',1,'Model::remove(System *)'],['../class_model.html#afc1a1073edd5c05c52f6375e95d1c71a',1,'Model::remove(Flow *)']]],
-  ['run_1',['run',['../class_model.html#aef5a574647152d4252ad054d9604f4bb',1,'Model']]]
+  ['operator_21_3d_0',['operator!=',['../class_flow.html#af25dda48ad2f5388caeae4141622c6b5',1,'Flow']]],
+  ['operator_3d_1',['operator=',['../class_flow.html#a21f26edbbb55b1c8312d0836153c08a9',1,'Flow::operator=()'],['../class_system.html#a93f350faa6efd0b1eca2bfc2c73c8cd6',1,'System::operator=()']]],
+  ['operator_3d_3d_2',['operator==',['../class_flow.html#a59f6cdbe086d9604e5d11c540a618667',1,'Flow']]]
 ];

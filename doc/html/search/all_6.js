@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['logisticalfuncionaltest_0',['logisticalFuncionalTest',['../funcional__tests_8cpp.html#a60914db64bde71b56d69320797266c29',1,'logisticalFuncionalTest():&#160;funcional_tests.cpp'],['../funcional__tests_8h.html#a60914db64bde71b56d69320797266c29',1,'logisticalFuncionalTest():&#160;funcional_tests.cpp']]]
+  ['itflow_0',['itFlow',['../class_model.html#a39b5d97e71ee3fae373e7a1554fc26e8',1,'Model']]],
+  ['itsystem_1',['itSystem',['../class_model.html#a34ecd4402511748377eec2270b795e5b',1,'Model']]]
 ];
