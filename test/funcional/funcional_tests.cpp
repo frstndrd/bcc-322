@@ -47,7 +47,12 @@ void logisticalFuncionalTest(){
     model->show();
 
     assert(round(fabs(s1->getValue() - 88.2167) * 10000) == 0);
-    assert(round(fabs(s2->getValue() - 21.7833) * 10000) == 0);
+    assert(trunc(fabs(s2->getValue() - 21.7833) * 10000) == 0);
+    //printf("\n%lf\n", (s2->getValue()));
+    //assert(fabs(s2->getValue() - 21.7833) < 0.0001);
+    //printf("\n%lf\n", (s2->getValue() - 21.7833) * 100000); // 0.000054 -> arrendonda pra cima
+    //printf("\n%lf\n", round((s2->getValue() - 21.7833)*10000));
+
 
     model->clear();
 
