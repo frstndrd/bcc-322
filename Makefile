@@ -4,5 +4,5 @@ execute:
 run: 
 	.\bin\testesfuncionais.exe
 
-clear:
+clean:
 	del .\bin\*.exe
