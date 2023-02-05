@@ -1,8 +1,8 @@
 <map id="test/funcional/flowExponential.h" name="test/funcional/flowExponential.h">
-<area shape="rect" id="node1" title=" " alt="" coords="13,5,217,31"/>
-<area shape="rect" id="node2" href="$flow_8h.html" title=" " alt="" coords="64,79,165,104"/>
+<area shape="rect" id="node1" title="Contains the code used to run the functional exponential tests." alt="" coords="13,5,217,31"/>
+<area shape="rect" id="node2" href="$flow_8h.html" title="Contains the specifications of the flow class." alt="" coords="64,79,165,104"/>
 <area shape="rect" id="node3" title=" " alt="" coords="5,152,77,177"/>
 <area shape="rect" id="node4" title=" " alt="" coords="87,225,142,251"/>
-<area shape="rect" id="node5" href="$system_8h.html" title=" " alt="" coords="153,152,229,177"/>
+<area shape="rect" id="node5" href="$system_8h.html" title="Describes the system class." alt="" coords="153,152,229,177"/>
 <area shape="rect" id="node6" title=" " alt="" coords="167,225,236,251"/>
 </map>

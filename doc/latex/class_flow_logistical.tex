@@ -2,11 +2,17 @@
 \label{class_flow_logistical}\index{FlowLogistical@{FlowLogistical}}
 
 
+This flow class connects two systems to evaluate their final value after running an equation for a given time.  
+
+
+
+
 {\ttfamily \#include $<$flow\+Logistical.\+h$>$}
 
 
 
-Inheritance diagram for Flow\+Logistical\+:\nopagebreak
+Inheritance diagram for Flow\+Logistical\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -15,7 +21,8 @@ Inheritance diagram for Flow\+Logistical\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for Flow\+Logistical\+:\nopagebreak
+Collaboration diagram for Flow\+Logistical\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -26,56 +33,61 @@ Collaboration diagram for Flow\+Logistical\+:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_flow_logistical_a41a1107828e9b913448317146ba8164a}{Flow\+Logistical}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_flow}{Flow}} Logistical object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_flow_logistical_a067c163c74b0e37b7441aa57b4e28bc2}{Flow\+Logistical}} (\mbox{\hyperlink{class_flow}{Flow}} \&obj)
-\item 
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_flow}{Flow}} Logistical object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_flow_logistical_abe7959cdd4a47308a387ae1be9a3a2bf}{Flow\+Logistical}} (const string \mbox{\hyperlink{class_flow_a8801d2ed91a9d96003d4bc8024451551}{name}}, \mbox{\hyperlink{class_system}{System}} $\ast$\mbox{\hyperlink{class_flow_a963ca162995d112f0f30322e2bb9de63}{source}}, \mbox{\hyperlink{class_system}{System}} $\ast$\mbox{\hyperlink{class_flow_a87be88d9bae4e927b29205faabeaf387}{target}})
-\item 
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_flow}{Flow}} Logistical object. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{class_flow_logistical_ac6b64f7f84b7b71501dadd94a1db1fd0}{$\sim$\+Flow\+Logistical}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_flow}{Flow}} Logistical object. \end{DoxyCompactList}\item 
 virtual float \mbox{\hyperlink{class_flow_logistical_ae148d062334b06c688d3ee925043a39b}{execute}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Run the flow\textquotesingle{}s equation. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_flow}{Flow}}}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_flow_ac9975e144e606242748197798e87dd32}{Flow}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_flow}{Flow}} object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_flow_acc51cf4150304f40fcead064e62cc926}{Flow}} (\mbox{\hyperlink{class_flow}{Flow}} \&obj)
-\item 
+\begin{DoxyCompactList}\small\item\em Copy a \mbox{\hyperlink{class_flow}{Flow}} object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_flow_af2532868142ebe2e67475d2fe8606a68}{Flow}} (const string \mbox{\hyperlink{class_flow_a8801d2ed91a9d96003d4bc8024451551}{name}}, \mbox{\hyperlink{class_system}{System}} $\ast$\mbox{\hyperlink{class_flow_a963ca162995d112f0f30322e2bb9de63}{source}}, \mbox{\hyperlink{class_system}{System}} $\ast$\mbox{\hyperlink{class_flow_a87be88d9bae4e927b29205faabeaf387}{target}})
-\item 
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_flow}{Flow}} object. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{class_flow_a5991efa6e8cf88c4ef2125cc727db333}{$\sim$\+Flow}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_flow}{Flow}} object. \end{DoxyCompactList}\item 
 string \mbox{\hyperlink{class_flow_a62bbc54ff95eeb0795511519edf32077}{get\+Name}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Get the Name object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_flow_a8a6ee4d4d488e08e8d6fbe1bdb5c14ef}{set\+Name}} (const string \mbox{\hyperlink{class_flow_a8801d2ed91a9d96003d4bc8024451551}{name}})
-\item 
+\begin{DoxyCompactList}\small\item\em Set the Name object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_system}{System}} $\ast$ \mbox{\hyperlink{class_flow_a1f3858f90d141807377c2640fb5dd0fc}{get\+Source}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Get the Source object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_flow_a250fc53158862fc0db77b323a33e48a3}{set\+Source}} (\mbox{\hyperlink{class_system}{System}} $\ast$\mbox{\hyperlink{class_flow_a963ca162995d112f0f30322e2bb9de63}{source}})
-\item 
+\begin{DoxyCompactList}\small\item\em Set the Source object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_system}{System}} $\ast$ \mbox{\hyperlink{class_flow_aff8a0f8ca8dc50d37c92ab7556e172b5}{get\+Target}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Get the Target object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_flow_ab69903880174e5bcdc0d815b5de7b3e0}{set\+Target}} (\mbox{\hyperlink{class_system}{System}} $\ast$\mbox{\hyperlink{class_flow_a87be88d9bae4e927b29205faabeaf387}{target}})
-\item 
+\begin{DoxyCompactList}\small\item\em Set the Target object. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_flow_a59f6cdbe086d9604e5d11c540a618667}{operator==}} (const \mbox{\hyperlink{class_flow}{Flow}} \&obj) const
 \item 
 bool \mbox{\hyperlink{class_flow_af25dda48ad2f5388caeae4141622c6b5}{operator!=}} (const \mbox{\hyperlink{class_flow}{Flow}} \&obj) const
 \item 
 \mbox{\hyperlink{class_flow}{Flow}} \& \mbox{\hyperlink{class_flow_a21f26edbbb55b1c8312d0836153c08a9}{operator=}} (const \mbox{\hyperlink{class_flow}{Flow}} \&obj)
-\item 
+\begin{DoxyCompactList}\small\item\em Overload the \textquotesingle{}=\textquotesingle{} operator, cloning from one to the other. \end{DoxyCompactList}\item 
 virtual float \mbox{\hyperlink{class_flow_a0da37d87c3c4846e576fc13f4241640e}{execute}} ()=0
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Purely virtual method to be inherited by subclasses created by the user. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 \doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_flow}{Flow}}}
 \begin{DoxyCompactItemize}
 \item 
 string \mbox{\hyperlink{class_flow_a8801d2ed91a9d96003d4bc8024451551}{name}}
-\item 
+\begin{DoxyCompactList}\small\item\em Name the flow. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_system}{System}} $\ast$ \mbox{\hyperlink{class_flow_a963ca162995d112f0f30322e2bb9de63}{source}}
-\item 
+\begin{DoxyCompactList}\small\item\em Assign the flow\textquotesingle{}s source. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_system}{System}} $\ast$ \mbox{\hyperlink{class_flow_a87be88d9bae4e927b29205faabeaf387}{target}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Assign the flow\textquotesingle{}s target. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This flow class connects two systems to evaluate their final value after running an equation for a given time. 
+
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -85,13 +97,27 @@ string \mbox{\hyperlink{class_flow_a8801d2ed91a9d96003d4bc8024451551}{name}}
 \doxysubsubsection{\texorpdfstring{FlowLogistical()}{FlowLogistical()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily Flow\+Logistical\+::\+Flow\+Logistical (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Construct a new \mbox{\hyperlink{class_flow}{Flow}} Logistical object. 
+
 \mbox{\Hypertarget{class_flow_logistical_a067c163c74b0e37b7441aa57b4e28bc2}\label{class_flow_logistical_a067c163c74b0e37b7441aa57b4e28bc2}} 
 \index{FlowLogistical@{FlowLogistical}!FlowLogistical@{FlowLogistical}}
 \index{FlowLogistical@{FlowLogistical}!FlowLogistical@{FlowLogistical}}
 \doxysubsubsection{\texorpdfstring{FlowLogistical()}{FlowLogistical()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
 {\footnotesize\ttfamily Flow\+Logistical\+::\+Flow\+Logistical (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_flow}{Flow}} \&}]{obj }\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:\nopagebreak
+
+
+Construct a new \mbox{\hyperlink{class_flow}{Flow}} Logistical object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & flow to be copied \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -104,11 +130,28 @@ Here is the call graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{FlowLogistical()}{FlowLogistical()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
 {\footnotesize\ttfamily Flow\+Logistical\+::\+Flow\+Logistical (\begin{DoxyParamCaption}\item[{const string}]{name,  }\item[{\mbox{\hyperlink{class_system}{System}} $\ast$}]{source,  }\item[{\mbox{\hyperlink{class_system}{System}} $\ast$}]{target }\end{DoxyParamCaption})}
 
+
+
+Construct a new \mbox{\hyperlink{class_flow}{Flow}} Logistical object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & of the flow \\
+\hline
+{\em source} & system \\
+\hline
+{\em target} & system \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{class_flow_logistical_ac6b64f7f84b7b71501dadd94a1db1fd0}\label{class_flow_logistical_ac6b64f7f84b7b71501dadd94a1db1fd0}} 
 \index{FlowLogistical@{FlowLogistical}!````~FlowLogistical@{$\sim$FlowLogistical}}
 \index{````~FlowLogistical@{$\sim$FlowLogistical}!FlowLogistical@{FlowLogistical}}
 \doxysubsubsection{\texorpdfstring{$\sim$FlowLogistical()}{~FlowLogistical()}}
 {\footnotesize\ttfamily Flow\+Logistical\+::$\sim$\+Flow\+Logistical (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destroy the \mbox{\hyperlink{class_flow}{Flow}} Logistical object. 
 
 
 
@@ -119,6 +162,13 @@ Here is the call graph for this function\+:\nopagebreak
 \doxysubsubsection{\texorpdfstring{execute()}{execute()}}
 {\footnotesize\ttfamily float Flow\+Logistical\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
+
+
+Run the flow\textquotesingle{}s equation. 
+
+\begin{DoxyReturn}{Returns}
+float The result of the calculations 
+\end{DoxyReturn}
 
 
 Implements \mbox{\hyperlink{class_flow_a0da37d87c3c4846e576fc13f4241640e}{Flow}}.
