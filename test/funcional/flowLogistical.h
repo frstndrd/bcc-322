@@ -8,7 +8,7 @@
 */
 
 #ifndef FLOWLOGISTICAL_H  
-#define FLOWLOGISTIC_H
+#define FLOWLOGISTICAL_H
 
 #include "../../src/flow.h"
 
