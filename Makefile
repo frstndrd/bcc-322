@@ -1,8 +1,11 @@
-execute:
-	g++ src/*.cpp test/funcional/*.cpp -o bin/testesfuncionais -Wall
+execute: 
+	g++ src/*.cpp test/funcional/*.cpp -o bin/funcional
 
-run: 
-	.\bin\testesfuncionais.exe
+clean: 
+	del /f .\bin\*.o
 
-clean:
-	del .\bin\*.exe
+veryclean:
+	del /f .\bin\*.exe
+
+run:
+	./bin/funcional
