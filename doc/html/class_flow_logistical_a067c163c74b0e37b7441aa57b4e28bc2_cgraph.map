@@ -1,6 +1,0 @@
-<map id="FlowLogistical::FlowLogistical" name="FlowLogistical::FlowLogistical">
-<area shape="rect" id="node1" title="Construct a new Flow Logistical object." alt="" coords="5,55,200,80"/>
-<area shape="rect" id="node2" href="$class_flow.html#a62bbc54ff95eeb0795511519edf32077" title="Get the Name object." alt="" coords="251,5,361,31"/>
-<area shape="rect" id="node3" href="$class_flow.html#a1f3858f90d141807377c2640fb5dd0fc" title="Get the Source object." alt="" coords="248,55,364,80"/>
-<area shape="rect" id="node4" href="$class_flow.html#aff8a0f8ca8dc50d37c92ab7556e172b5" title="Get the Target object." alt="" coords="251,104,361,129"/>
-</map>

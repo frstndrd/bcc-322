@@ -1,5 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_flow.html" title="Define the interface with the methods to be implemented." alt="" coords="5,31,55,56"/>
-<area shape="rect" id="node2" href="$class_flow_exponential.html" title="This flow class connects two systems to evaluate their final values after running an equation for a g..." alt="" coords="103,5,220,31"/>
-<area shape="rect" id="node3" href="$class_flow_logistical.html" title="This flow class connects two systems to evaluate their final value after running an equation for a gi..." alt="" coords="109,55,213,80"/>
-</map>
