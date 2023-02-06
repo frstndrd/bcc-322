@@ -1,0 +1,5 @@
+<map id="Flow" name="Flow">
+<area shape="rect" id="node1" title="Define the interface with the methods to be implemented." alt="" coords="106,5,155,31"/>
+<area shape="rect" id="node2" href="$class_flow_exponential.html" title="This flow class connects two systems to evaluate their final values after running an equation for a g..." alt="" coords="5,79,123,104"/>
+<area shape="rect" id="node3" href="$class_flow_logistical.html" title="This flow class connects two systems to evaluate their final value after running an equation for a gi..." alt="" coords="147,79,251,104"/>
+</map>
