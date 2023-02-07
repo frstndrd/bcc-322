@@ -1,2 +1,3 @@
-# bcc-322
-Código referente ao trabalho prático desenvolvido para a disciplina Engenharia de Software I.
+# BCC 322
+# Software Engineering I
+Development of a C++ Framework for the Construction of Simulations Based on System Dynamics
