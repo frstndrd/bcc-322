@@ -6,13 +6,16 @@
 #include "..\..\src\system.h"
 #include "..\..\src\flow.h"
 
+#define GRN     "\x1B[32m"
+#define RESET   "\033[m"
+
 int main() {
     exponentialFuncionalTest();
-    cout << "\t[+] Passou pelo teste exponencial!\n" << endl;
+    cout << "[+] Exponential Test: " << GRN << "OK!" << RESET;
     logisticalFuncionalTest();
-    cout << "\t[+] Passou pelo teste logistico!\n" << endl;
+    cout << "[+] Logistical Test: " << GRN << "OK!" << RESET;
     complexFuncionalTest();
-    cout << "\t[+] Passou por todos testes funcionais!\n" << endl;
+    cout << "[+] Complex Test: " << GRN << "OK!\n\n" << RESET;
     return true;
 }
 
