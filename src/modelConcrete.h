@@ -28,12 +28,12 @@ class ModelConcrete:public Model{
          */
         string name;
         /**
-         * @brief Store an array of pointer-to-flow variables
+         * @brief Store an array of flows to be used in the model
          * 
          */
         vector<Flow*> flows;
         /**
-         * @brief Store an array of pointer-to-system variables
+         * @brief Store an array of systems to be used in the model
          * 
          */
         vector<System*> systems;
@@ -69,8 +69,8 @@ class ModelConcrete:public Model{
          * @brief Construct a new Model object
          * 
          * @param name of the model
-         * @param flows array of pointer-to-flow variables
-         * @param systems array of pointer-to-system variables
+         * @param flows a vector of contaning every flow to be used in this model
+         * @param systems a vector containing every system to be used in this model
          */
         ModelConcrete(const string name, vector<Flow*> &flows, vector<System*> &systems);
         /**
@@ -99,20 +99,20 @@ class ModelConcrete:public Model{
         /**
          * @brief Set the Name object
          * 
-         * @param name the model
+         * @param name of the model
          */
         void setName(const string name);
 
         /**
          * @brief Get the flow from the beginning of the vector
          * 
-         * @return itFlow The flow from the beginning
+         * @return itFlow The first flow from the vector
          */
         itFlow getFlowBegin();
         /**
          * @brief Get the flow from the end of the vector
          * 
-         * @return itFlow The flow from the end
+         * @return itFlow The last flow from the vector
          */
         itFlow getFlowEnd();
         /**
@@ -125,13 +125,13 @@ class ModelConcrete:public Model{
         /**
          * @brief Get the system from the beginning of the vector
          * 
-         * @return itSystem The system from the beginning
+         * @return itSystem The first system of the vector
          */
         itSystem getSystemBegin();
         /**
          * @brief Get the system from the end of the vector
          * 
-         * @return itSystem The system from the end
+         * @return itSystem The last system of the vector
          */
         itSystem getSystemEnd();
         /**
@@ -143,13 +143,13 @@ class ModelConcrete:public Model{
         
         /**
          * @brief Add a system to the model
-         * @param pointer to a system
+         * @param pointer to the system that will be added to a model
          * 
          */
         void add(System*);
         /**
          * @brief Add a flow to the model
-         * @param pointer to a flow
+         * @param pointer to the flow that will be added to a model
          * 
          */
         void add(Flow*);

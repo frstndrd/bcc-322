@@ -52,8 +52,8 @@ class FlowConcrete:public Flow{
          * @brief Construct a new Flow object
          * 
          * @param name of the flow
-         * @param source system
-         * @param target system
+         * @param source system with content to be moved by the flow
+         * @param target system to receive the content moved by the flow
          */
         FlowConcrete(const string name, System *source, System *target);
         /**
@@ -71,7 +71,7 @@ class FlowConcrete:public Flow{
         /**
          * @brief Set the Name object
          * 
-         * @param name the flow
+         * @param name of the flow
          */
         void setName(const string name);
         /**
@@ -109,7 +109,7 @@ class FlowConcrete:public Flow{
          */
         Flow &operator= (const Flow &obj);
         /**
-         * @brief Purely virtual method to be inherited by subclasses created by the user.
+         * @brief Purely virtual method to be inherited by subclasses created by the user
          * 
          * @return float 
          */

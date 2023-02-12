@@ -163,8 +163,8 @@ void unit_Flow_execute(void) {
 
     m->run(0, 100, 1);
 
-    assert(abs(s1->getValue() - 36.6032) <  0.0001);
-    assert(abs(s2->getValue() - 63.3968) <  0.0001);
+    assert(round(fabs(s1->getValue() - 36.6032) * 10000) == 0);
+    assert(round(fabs(s2->getValue() - 63.3968) * 10000) == 0);
 
     m->clear();
 
@@ -178,8 +178,8 @@ void unit_Flow_execute(void) {
 
     m->run(0, 100, 1);
 
-    assert(abs(s1->getValue() - 88.2167) <  0.0001f);
-    assert(abs(s2->getValue() - 21.7834) <  0.0001f);
+    assert(round(fabs(s1->getValue() - 88.2167) * 10000) == 0);
+    assert(round(fabs(s2->getValue() - 21.7834) * 10000) == 0);
 
     m->clear();
 

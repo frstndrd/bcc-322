@@ -1,7 +1,7 @@
 /**
  * @file flowExponential.h
  * @author Iago Andrade (iago.andrade@aluno.ufop.edu.br)
- * @brief Contains the code used to run the functional exponential tests
+ * @brief Contains the code necessary to run the functional exponential tests
  * 
  * @copyright Copyright (c) 2023
  * 
@@ -33,8 +33,8 @@ class FlowExponential:public FlowConcrete {
          * @brief Construct a new Flow Exponential object
          * 
          * @param name of the flow
-         * @param source system
-         * @param target system
+         * @param source system, with contents to be moved from
+         * @param target system, where the aforementioned content will be moved to
          */
         FlowExponential(const string name, System *source, System *target);
         /**
@@ -45,7 +45,7 @@ class FlowExponential:public FlowConcrete {
         /**
          * @brief Run the flow's equation
          * 
-         * @return float The result of the calculations
+         * @return float The result of the calculations described by the flow
          */
         virtual float execute();  
 };

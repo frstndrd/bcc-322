@@ -1,7 +1,7 @@
 /**
  * @file flowExponential.h
  * @author Iago Andrade (iago.andrade@aluno.ufop.edu.br)
- * @brief Contains the code used to run the functional logistical tests
+ * @brief Contains the code necessary to run the functional logistical tests
  * 
  * @copyright Copyright (c) 2023
  * 
@@ -34,8 +34,8 @@ public:
      * @brief Construct a new Flow Logistical object
      * 
      * @param name of the flow
-     * @param source system
-     * @param target system
+     * @param source system with content to be moved by the flow
+     * @param target system to receive the content moved by the flow
      */
     FlowLogistical(const string name, System *source, System *target);
     /**
@@ -46,7 +46,7 @@ public:
     /**
      * @brief Run the flow's equation
      * 
-     * @return float The result of the calculations
+     * @return float The result of the calculations described by the flow
      */
     virtual float execute();
 };
