@@ -1,64 +1,64 @@
 #include "model.h"
 
-Model :: Model() {
+ModelConcrete::ModelConcrete() {
     name = "NULL";
     flows.clear();
     systems.clear();
 }
 
-Model :: Model(const string name, vector<Flow*> &flows, vector<System*> &systems) : name(name), flows(flows), systems(systems) {}
-Model :: Model(const string name):name(name) {}
+ModelConcrete::ModelConcrete(const string name, vector<Flow*> &flows, vector<System*> &systems) : name(name), flows(flows), systems(systems) {}
+ModelConcrete::ModelConcrete(const string name):name(name) {}
 
-Model :: Model(Model &obj) {
+ModelConcrete::ModelConcrete(Model &obj) {
     if(&obj == this)
         return;
 
     name = obj.getName();
 }
 
-Model :: ~Model() {}
+ModelConcrete::~ModelConcrete() {}
 
-string Model :: getName() const{
+string ModelConcrete::getName() const{
     return name;
 }
 
-void Model :: setName(const string name) {
+void ModelConcrete::setName(const string name) {
     this->name = name;
 }
 
-Model :: itFlow Model :: getFlowBegin() {
+ModelConcrete::itFlow ModelConcrete::getFlowBegin() {
     return flows.begin();
 }
 
-Model :: itFlow Model :: getFlowEnd() {
+ModelConcrete::itFlow ModelConcrete::getFlowEnd() {
     return flows.end();
 }
     
-int Model :: getFlowSize() {
+int ModelConcrete::getFlowSize() {
     return flows.size();
 }   
 
-Model :: itSystem Model :: getSystemBegin() {
+ModelConcrete::itSystem ModelConcrete::getSystemBegin() {
     return systems.begin();
 }
 
-Model :: itSystem Model :: getSystemEnd() {
+ModelConcrete::itSystem ModelConcrete::getSystemEnd() {
     return systems.end();
 }
 
-int Model :: getSystemSize() {
+intModelConcrete::getSystemSize() {
     return systems.size();
 } 
 
-void Model :: add(System* subSystem) {
+void ModelConcrete::add(System* subSystem) {
     systems.push_back(subSystem);
 }
 
-void Model :: add(Flow* flow) {
+void ModelConcrete::add(Flow* flow) {
     flows.push_back(flow);
 }
 
-bool Model :: remove(System* obj) {
+bool ModelConcrete::remove(System* obj) {
     for(auto thisystem = systems.begin(); thisystem != systems.end(); thisystem++) {
         if(*thisystem == obj) {
             systems.erase(thisystem);
@@ -68,7 +68,7 @@ bool Model :: remove(System* obj) {
     return false;
 }
 
-bool Model :: remove(Flow* obj) {
+bool ModelConcrete::remove(Flow* obj) {
     for(auto thisFlows = flows.begin(); thisFlows != flows.end(); thisFlows++) {
         if(*thisFlows == obj) {
             flows.erase(thisFlows);
@@ -78,7 +78,7 @@ bool Model :: remove(Flow* obj) {
     return false;
 }
 
-Model& Model :: operator=(const Model& obj) {
+ModelConcrete& ModelConcrete::operator=(const Model& obj) {
     if(this != &obj) {
         this->flows.clear();
         this->systems.clear();
@@ -88,13 +88,13 @@ Model& Model :: operator=(const Model& obj) {
     return *this;
 }
 
-void Model :: clear() {
+void ModelConcrete::clear() {
     name = "NULL";
     flows.clear();
     systems.clear();
 }
 
-void Model :: run(int start, int finish, int increment) {
+void ModelConcrete::run(int start, int finish, int increment) {
     vector<Flow*> :: iterator ItFlow;
 
     System* source;
@@ -132,5 +132,9 @@ void Model :: run(int start, int finish, int increment) {
 }
 
 void Model :: show() {
+    cout << endl;
+    cout << "Subsystems and their values:" << endl;
+    for (auto system : systems)
+        cout << "." << system->getName() << " " << system->getValue() << endl;
     cout << endl;
 }

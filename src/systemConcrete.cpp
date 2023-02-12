@@ -1,11 +1,11 @@
-#include "system.h"
+#include "systemConcrete.h"
 
-System :: System() {
+SystemConcrete::SystemConcrete() {
     name = "NULL";
     value = 0;
 }
 
-System :: System(System &obj) {
+SystemConcrete::SystemConcrete(System &obj) {
     if (&obj == this) 
         return;
 
@@ -13,9 +13,10 @@ System :: System(System &obj) {
     value = obj.getValue();
 };
 
-System :: System(const string name, float value):name(name), value(value) {}
-System :: System(const string name):name(name) {}
-System :: System(float value):value(value) {}
+SystemConcrete::SystemConcrete(const string name, float value):name(name), value(value) {}
+SystemConcrete::SystemConcrete(const string name):name(name) {}
+SystemConcrete::SystemConcrete(float value):value(value) {}
+SystemConcrete::~SystemConcrete() {}
 
 string System :: getName() const{
     return name;
@@ -43,4 +44,3 @@ System& System :: operator= (const System& obj) {
     return *this;
 }
 
-System :: ~System() {}

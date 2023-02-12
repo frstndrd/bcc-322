@@ -10,6 +10,7 @@
 #include "../../src/model.h"
 #include "../../src/system.h"
 #include "../../src/flow.h"
+#include "../../src/flowConcrete.h"
 #include "flowExponential.h"
 #include "flowLogistical.h"
 
