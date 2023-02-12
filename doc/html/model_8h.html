@@ -79,27 +79,30 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Represents the simulation model.  
+<p>Contains the public methods of the model (simulation) class.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;cstring&gt;</code><br />
 <code>#include &lt;ostream&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &quot;<a class="el" href="flow_8h_source.html">flow.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="flow_concrete_8h_source.html">flowConcrete.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="system_8h_source.html">system.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="model_8h_source.html">model.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="system_concrete_8h_source.html">systemConcrete.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for model.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="model_8h__incl.png" border="0" usemap="#asrc_2model_8h" alt=""/></div>
 <map name="asrc_2model_8h" id="asrc_2model_8h">
-<area shape="rect" title="Represents the simulation model." alt="" coords="124,7,215,32"/>
-<area shape="rect" title=" " alt="" coords="5,80,67,106"/>
-<area shape="rect" title=" " alt="" coords="96,227,165,252"/>
-<area shape="rect" title=" " alt="" coords="141,80,197,106"/>
-<area shape="rect" href="flow_8h.html" title="Contains the specifications of the flow class." alt="" coords="273,80,327,106"/>
-<area shape="rect" href="system_8h.html" title="Describes the system class." alt="" coords="163,154,239,179"/>
-<area shape="rect" title=" " alt="" coords="264,154,336,179"/>
-<area shape="rect" title=" " alt="" coords="217,227,271,252"/>
+<area shape="rect" title="Contains the public methods of the model (simulation) class." alt="" coords="261,5,352,31"/>
+<area shape="rect" title=" " alt="" coords="5,79,67,104"/>
+<area shape="rect" title=" " alt="" coords="171,299,240,324"/>
+<area shape="rect" title=" " alt="" coords="531,79,587,104"/>
+<area shape="rect" href="flow_8h.html" title="Contains the public methods of the flow class." alt="" coords="497,152,551,177"/>
+<area shape="rect" href="system_8h.html" title="Contains the public methods of the system class." alt="" coords="294,225,370,251"/>
+<area shape="rect" href="flow_concrete_8h.html" title="Contains the proper implementation of the flow class." alt="" coords="349,79,456,104"/>
+<area shape="rect" href="system_concrete_8h.html" title="Describes the system class." alt="" coords="141,152,269,177"/>
+<area shape="rect" title=" " alt="" coords="445,225,517,251"/>
+<area shape="rect" title=" " alt="" coords="342,299,397,324"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -107,11 +110,17 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="model_8h__dep__incl.png" border="0" usemap="#asrc_2model_8hdep" alt=""/></div>
 <map name="asrc_2model_8hdep" id="asrc_2model_8hdep">
-<area shape="rect" title="Represents the simulation model." alt="" coords="165,8,256,33"/>
-<area shape="rect" href="model_8cpp.html" title=" " alt="" coords="5,89,109,114"/>
-<area shape="rect" href="funcional__tests_8h.html" title="Runs the functional tests." alt="" coords="133,81,288,121"/>
-<area shape="rect" href="test_2funcional_2main_8cpp.html" title=" " alt="" coords="247,177,403,202"/>
-<area shape="rect" href="funcional__tests_8cpp.html" title=" " alt="" coords="68,169,223,209"/>
+<area shape="rect" title="Contains the public methods of the model (simulation) class." alt="" coords="264,5,355,31"/>
+<area shape="rect" href="model_concrete_8h.html" title="Contains the implementation per se of the simulation model." alt="" coords="327,79,470,104"/>
+<area shape="rect" href="funcional__tests_8h.html" title="Runs the functional tests." alt="" coords="141,152,296,192"/>
+<area shape="rect" href="model_concrete_8cpp.html" title=" " alt="" coords="321,159,477,185"/>
+<area shape="rect" href="unit__flow_8h.html" title=" " alt="" coords="501,159,635,185"/>
+<area shape="rect" href="unit__model_8h.html" title=" " alt="" coords="660,159,807,185"/>
+<area shape="rect" href="funcional__tests_8cpp.html" title=" " alt="" coords="5,240,160,280"/>
+<area shape="rect" href="funcional_2main_8cpp.html" title=" " alt="" coords="185,247,341,273"/>
+<area shape="rect" href="unit_2main_8cpp.html" title=" " alt="" coords="623,247,750,273"/>
+<area shape="rect" href="unit__flow_8cpp.html" title=" " alt="" coords="451,247,599,273"/>
+<area shape="rect" href="unit__model_8cpp.html" title=" " alt="" coords="774,247,935,273"/>
 </map>
 </div>
 </div>
@@ -120,11 +129,11 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html">Model</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store vectors containing the name of the model and flows and systems related to it.  <a href="class_model.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class represents the general simulation model, with all of its flows and systems.  <a href="class_model.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents the simulation model. </p>
+<div class="textblock"><p>Contains the public methods of the model (simulation) class. </p>
 <dl class="section author"><dt>Author</dt><dd>Iago Andrade (<a href="#" onclick="location.href='mai'+'lto:'+'iag'+'o.'+'and'+'ra'+'de@'+'al'+'uno'+'.u'+'fop'+'.e'+'du.'+'br'; return false;">iago.<span class="obfuscator">.nosp@m.</span>andr<span class="obfuscator">.nosp@m.</span>ade@a<span class="obfuscator">.nosp@m.</span>luno<span class="obfuscator">.nosp@m.</span>.ufop<span class="obfuscator">.nosp@m.</span>.edu<span class="obfuscator">.nosp@m.</span>.br</a>) </dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2023 </dd></dl>
 </div></div><!-- contents -->

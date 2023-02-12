@@ -1,7 +1,7 @@
 /**
  * @file flow.h
  * @author Iago Andrade (iago.andrade@aluno.ufop.edu.br)
- * @brief Contains the specifications of the flow class
+ * @brief Contains the public methods of the flow class
  * 
  * @copyright Copyright (c) 2023
  * 
@@ -9,106 +9,68 @@
 
 #ifndef FLOW_H
 #define FLOW_H
-
 #include <iostream>
 #include <string>
 #include "system.h"
 
+using namespace std;
+
 /**
- * @brief Define the interface with the methods to be implemented
+ * @brief The Flow Interface is the interface that defines the methods to be implemented
  * 
  */
 class Flow {
-    protected:
-        /**
-         * @brief Name the flow
-         * 
-         */
-        string name;
-        /**
-         * @brief Assign the flow's source
-         * 
-         */
-        System *source;
-        /**
-         * @brief Assign the flow's target
-         * 
-         */
-        System *target;
     public:
         /**
-         * @brief Construct a new Flow object
+         * @brief A virtual destructor of the class
          * 
          */
-        Flow();
+        virtual ~Flow() {};
         /**
-         * @brief Copy a Flow object
+         * @brief Get the name of a flow
          * 
-         * @param obj flow to be copied
+         * @return string containing the name of the flow
          */
-        Flow(Flow &obj);
+        virtual string getName() const = 0;
         /**
-         * @brief Construct a new Flow object
+         * @brief Set the name of a flow
          * 
-         * @param name of the flow
-         * @param source system
-         * @param target system
+         * @param name being the string that names a flow
          */
-        Flow(const string name, System *source, System *target);
+        virtual void setName(const string name) = 0;
         /**
-         * @brief Destroy the Flow object
+         * @brief Get the source system for a flow
          * 
+         * @return System* Which contents shall be moved to another system by a flow
          */
-        virtual ~Flow();
-
+        virtual System *getSource() const = 0;
         /**
-         * @brief Get the Name object
+         * @brief Set the source system for a flow
          * 
-         * @return string The name of a flow
+         * @param source system which will act as a source for the operations of the flow
          */
-        string getName() const;
+        virtual void setSource(System *source) = 0;
         /**
-         * @brief Set the Name object
+         * @brief Get the target system for a flow
          * 
-         * @param name the flow
+         * @return System* Points to the system that will act as a recipient for the flow
          */
-        void setName(const string name);
+        virtual System *getTarget() const = 0;
         /**
-         * @brief Get the Source object
+         * @brief Set the target object
          * 
-         * @return System* The system that acts as a source for the flow
+         * @param target system that will be the recipient for the operations of the flow
          */
-        System *getSource() const;
+        virtual void setTarget(System *target) = 0;
         /**
-         * @brief Set the Source object
+         * @brief Overload the '=' operator in order to "clone" a flow
          * 
-         * @param source system
+         * @param obj being the flow that's gonna be cloned
+         * @return Flow& A flow object is returned identical to the one that was cloned
          */
-        void setSource(System *source);
+        virtual Flow &operator= (const Flow &obj) = 0;
         /**
-         * @brief Get the Target object
-         * 
-         * @return System* The system that acts as a target for the flow
-         */
-        System *getTarget() const;
-        /**
-         * @brief Set the Target object
-         * 
-         * @param target system
-         */
-        void setTarget(System *target);
-
-        bool operator==(const Flow &obj) const;
-        bool operator!=(const Flow &obj) const;
-        /**
-         * @brief Overload the '=' operator, cloning from one to the other
-         * 
-         * @param obj flow to be cloned
-         * @return Flow& A clone of the flow
-         */
-        Flow &operator= (const Flow &obj);
-        /**
-         * @brief Purely virtual method to be inherited by subclasses created by the user.
+         * @brief Purely virtual method that contains the equation that defines a flow
          * 
          * @return float 
          */

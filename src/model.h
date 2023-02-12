@@ -1,7 +1,7 @@
 /**
  * @file model.h
  * @author Iago Andrade (iago.andrade@aluno.ufop.edu.br)
- * @brief Represents the simulation model
+ * @brief Contains the public methods of the model (simulation) class
  * 
  * @copyright Copyright (c) 2023
  * 
@@ -13,178 +13,127 @@
 #include <ostream>
 #include <vector>
 #include "flow.h"
+#include "flowConcrete.h"
 #include "system.h"
-#include "model.h"
+#include "systemConcrete.h"
+
+using namespace std;
 
 /**
- * @brief Store vectors containing the name of the model and flows and systems related to it
+ * @brief This class represents the general simulation model, with all of its flows and systems
  * 
  */
 class Model {
-    protected:
-        /**
-         * @brief Name of the model
-         * 
-         */
-        string name;
-        /**
-         * @brief Store an array of pointer-to-flow variables
-         * 
-         */
-        vector<Flow*> flows;
-        /**
-         * @brief Store an array of pointer-to-system variables
-         * 
-         */
-        vector<System*> systems;
-        
-    private:
-        /**
-         * @brief Copy a Model object
-         * 
-         * @param obj model to be copied
-         */
-        Model(Model& obj);
-        /**
-         * @brief Overload the '=' operator, cloning from one to the other
-         * 
-         * @param obj model to be cloned
-         * @return Model& A clone of the model
-         */
-        Model& operator= (const Model& obj);
-
     public:
         /**
-         * @brief Empty constructor of the class
+         * @brief A virtual destructor of the class
          * 
          */
-        Model();
+        virtual ~Model() {};
         /**
-         * @brief Construct a new Model object
+         * @brief Set the type for the vector of flows
          * 
-         * @param name of the model
          */
-        Model(const string name);
+        typedef typename vector<Flow*>::iterator itFlow;
         /**
-         * @brief Construct a new Model object
+         * @brief Set the type for the vector of systems
          * 
-         * @param name of the model
-         * @param flows array of pointer-to-flow variables
-         * @param systems array of pointer-to-system variables
          */
-        Model(const string name, vector<Flow*> &flows, vector<System*> &systems);
+        typedef typename vector<System*>::iterator itSystem;
         /**
-         * @brief Destroy the Model object
+         * @brief Get the name of a model
          * 
+         * @return string containing the name of the model
          */
-        virtual ~Model();
-
+        virtual string getName() const = 0;
         /**
-         * @brief Set the flow vector type
+         * @brief Set the name of a model
          * 
+         * @param name being the string that names a model
          */
-        typedef typename vector<Flow*> :: iterator itFlow;
+        virtual void setName(const string name) = 0;
         /**
-         * @brief Set the system vector type
+         * @brief Get the first flow of a vector
          * 
+         * @return itFlow type
          */
-        typedef typename vector<System*> :: iterator itSystem;
-        
+        virtual itFlow getFlowBegin() = 0;
         /**
-         * @brief Get the Name object
+         * @brief Get the last flow of a vector
          * 
-         * @return string The name of a model
+         * @return itFlow type
          */
-        string getName() const;
-        /**
-         * @brief Set the Name object
-         * 
-         * @param name the model
-         */
-        void setName(const string name);
-
-        /**
-         * @brief Get the flow from the beginning of the vector
-         * 
-         * @return itFlow The flow from the beginning
-         */
-        itFlow getFlowBegin();
-        /**
-         * @brief Get the flow from the end of the vector
-         * 
-         * @return itFlow The flow from the end
-         */
-        itFlow getFlowEnd();
+        virtual itFlow getFlowEnd() = 0;
         /**
          * @brief Get the size of the flow vector
          * 
-         * @return int The size of the flow vector
+         * @return int Integer that represents its size
          */
-        int getFlowSize();
-
+        virtual int getFlowSize() = 0;
         /**
-         * @brief Get the system from the beginning of the vector
+         * @brief Get the first system of a vector
          * 
-         * @return itSystem The system from the beginning
+         * @return itSystem type
          */
-        itSystem getSystemBegin();
+        virtual itSystem getSystemBegin() = 0;
         /**
-         * @brief Get the system from the end of the vector
+         * @brief Get the last system of a vector
          * 
-         * @return itSystem The system from the end
+         * @return itSystem type
          */
-        itSystem getSystemEnd();
+        virtual itSystem getSystemEnd() = 0;
         /**
          * @brief Get the size of the system vector
          * 
-         * @return int The size of the system vector
+         * @return int Integer that represents its size
          */
-        int getSystemSize();
-        
+        virtual int getSystemSize() = 0;
         /**
          * @brief Add a system to the model
-         * @param pointer to a system
          * 
+         * @param System* being a pointer to the system to be added
          */
-        void add(System*);
+        virtual void add(System*) = 0;
         /**
          * @brief Add a flow to the model
-         * @param pointer to a flow
          * 
+         * @param Flow* being a pointer to the flow to be added
          */
-        void add(Flow*);
+        virtual void add(Flow*) = 0;
         /**
          * @brief Remove a system from the model
          * 
-         * @return true If the object and item have the same memory address
-         * @return false If the object and item have different memory addresses 
+         * @return true if the object and item share the same memory address
+         * @return false if they do not
          */
-        bool remove(System*);
+        virtual bool remove(System*) = 0;
         /**
          * @brief Remove a flow from the model
          * 
-         * @return true If the object and item have the same memory address
-         * @return false If the object and item have different memory addresses
+         * @return true if the object and item share the same memory address
+         * @return false if they do not
          */
-        bool remove(Flow*);
+        virtual bool remove(Flow*) = 0;
         /**
-         * @brief Clean the model
+         * @brief Clear the model, removing all of its systems and flows
          * 
          */
-        void clear();
+        virtual void clear() = 0;
         /**
-         * @brief Display the model
+         * @brief Show the names and values contained in the model
          * 
          */
-        void show();
+        virtual void show() = 0;
         /**
-         * @brief Execute the model based on initial time, end time and time intervals
+         * @brief Run the model with a start time, an end time and a set time interval between each execution
+         * 
          * @param int start time
          * @param int end time
          * @param int how many units of time shall pass between one execution and the next
          * 
          */
-        void run(int, int, int);    
+        virtual void run(int, int, int) = 0;    
+
 };
 
 #endif

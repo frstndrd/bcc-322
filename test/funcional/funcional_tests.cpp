@@ -1,9 +1,9 @@
 #include "funcional_tests.h"
 
 void exponentialFuncionalTest() {
-    Model* model = new Model();
-    System* s1 = new System("pop1", 100.0);
-    System* s2 = new System("pop2", 0.0);
+    Model* model = new ModelConcrete();
+    System* s1 = new SystemConcrete("pop1", 100.0);
+    System* s2 = new SystemConcrete("pop2", 0.0);
     Flow* flow = new FlowExponential("Exponencial", s1, s2);
     
     model->setName("Sistema exponencial");
@@ -31,9 +31,9 @@ void exponentialFuncionalTest() {
 }
 
 void logisticalFuncionalTest(){
-    Model* model = new Model();
-    System* s1 = new System("p1", 100.0);
-    System* s2 = new System("p2", 10.0);
+    Model* model = new ModelConcrete();
+    System* s1 = new SystemConcrete("p1", 100.0);
+    System* s2 = new SystemConcrete("p2", 10.0);
     Flow* flow = new FlowLogistical("Logistico", s1, s2);
     
     model->setName("Sistema logistico");
@@ -63,12 +63,12 @@ void logisticalFuncionalTest(){
 }
 
 void complexFuncionalTest(){
-    Model* model = new Model();
-    System* s1 = new System("Q1", 100.0);
-    System* s2 = new System("Q2", 0.0);
-    System* s3 = new System("Q3", 100.0);
-    System* s4 = new System("Q4", 0.0);
-    System* s5 = new System("Q5", 0.0);
+    Model* model = new ModelConcrete();
+    System* s1 = new SystemConcrete("Q1", 100.0);
+    System* s2 = new SystemConcrete("Q2", 0.0);
+    System* s3 = new SystemConcrete("Q3", 100.0);
+    System* s4 = new SystemConcrete("Q4", 0.0);
+    System* s5 = new SystemConcrete("Q5", 0.0);
     Flow* f = new FlowExponential("f", s1, s2);
     Flow* t = new FlowExponential("t", s2, s3);
     Flow* u = new FlowExponential("u", s3, s4);
