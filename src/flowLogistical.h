@@ -10,7 +10,7 @@
 #ifndef FLOWLOGISTICAL_H  
 #define FLOWLOGISTICAL_H
 
-#include "../../src/flowConcrete.h"
+#include "flowConcrete.h"
 
 /**
  * @brief This flow class connects two systems to evaluate their final value

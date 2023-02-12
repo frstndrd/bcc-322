@@ -1,12 +1,12 @@
 #include "flowExponential.h"
 
-FlowExponential :: FlowExponential() {
+FlowExponential::FlowExponential() {
     name = "NULL";
     source = NULL;
     target = NULL;
 }
 
-FlowExponential :: FlowExponential(Flow &obj) {
+FlowExponential::FlowExponential(Flow &obj) {
     if(&obj == this)
         return;
     

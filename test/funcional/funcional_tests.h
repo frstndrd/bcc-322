@@ -13,8 +13,8 @@
 #include "../../src/systemConcrete.h"
 #include "../../src/flow.h"
 #include "../../src/flowConcrete.h"
-#include "flowExponential.h"
-#include "flowLogistical.h"
+#include "../../src/flowExponential.h"
+#include "../../src/flowLogistical.h"
 
 #include <assert.h>
 #include <cmath>

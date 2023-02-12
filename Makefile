@@ -1,7 +1,10 @@
-execute: 
+execute:
 	g++ src/*.cpp test/funcional/*.cpp -o bin/funcional
 
-clean: 
+unit:
+	g++ src/*.cpp test/unit/*.cpp -o bin/unit
+
+clean:
 	del /f .\bin\*.o
 
 veryclean:
@@ -9,3 +12,6 @@ veryclean:
 
 run:
 	./bin/funcional
+
+runtest:
+	./bin/unit
