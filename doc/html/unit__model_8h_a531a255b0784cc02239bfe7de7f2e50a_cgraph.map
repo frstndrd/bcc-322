@@ -1,0 +1,7 @@
+<map id="unit_Model_clear" name="unit_Model_clear">
+<area shape="rect" id="node1" title=" " alt="" coords="5,80,125,105"/>
+<area shape="rect" id="node2" href="$class_model.html#a70362afdd9db6268b4adaedfeddb2935" title="Add a system to the model." alt="" coords="207,5,294,31"/>
+<area shape="rect" id="node3" href="$class_model.html#a70d1a18b51f1184b56b101becefe71dc" title="Clear the model, removing all of its systems and flows." alt="" coords="204,55,297,80"/>
+<area shape="rect" id="node4" href="$class_model.html#a7e7b0c2a71f4885ef268a88d225efc57" title="Get the size of the flow vector." alt="" coords="183,104,319,129"/>
+<area shape="rect" id="node5" href="$class_model.html#ac4eb8a0412f976745cde9ac1a396224e" title="Get the size of the system vector." alt="" coords="173,153,328,179"/>
+</map>

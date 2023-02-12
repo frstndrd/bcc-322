@@ -1,5 +1,6 @@
 <map id="FlowLogistical" name="FlowLogistical">
-<area shape="rect" id="node1" title="This flow class connects two systems to evaluate their final value after running an equation for a gi..." alt="" coords="5,183,109,208"/>
-<area shape="rect" id="node2" href="$class_flow.html" title="Define the interface with the methods to be implemented." alt="" coords="33,108,82,133"/>
-<area shape="rect" id="node3" href="$class_system.html" title="Define the interface with the methods to be implemented." alt="" coords="24,5,91,31"/>
+<area shape="rect" id="node1" title="This flow class connects two systems to evaluate their final value after running an equation for a gi..." alt="" coords="19,183,123,208"/>
+<area shape="rect" id="node2" href="$class_flow_concrete.html" title="Define the interface with the methods to be implemented." alt="" coords="21,108,122,133"/>
+<area shape="rect" id="node3" href="$class_flow.html" title="The Flow Interface is the interface that defines the methods to be implemented." alt="" coords="5,5,55,31"/>
+<area shape="rect" id="node4" href="$class_system.html" title=" " alt="" coords="79,5,146,31"/>
 </map>
