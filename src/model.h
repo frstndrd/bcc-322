@@ -10,7 +10,7 @@
 #ifndef MODEL_H
 #define MODEL_H
 #include <cstring>
-#include <ostring>
+#include <ostream>
 #include <vector>
 #include "flow.h"
 #include "flowConcrete.h"

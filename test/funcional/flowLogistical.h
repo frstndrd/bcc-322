@@ -17,7 +17,7 @@
  * after running an equation for a given time
  * 
  */
-class FlowLogistical : public Flow {
+class FlowLogistical:public FlowConcrete{
 public:
     /**
      * @brief Construct a new Flow Logistical object

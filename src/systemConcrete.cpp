@@ -18,23 +18,23 @@ SystemConcrete::SystemConcrete(const string name):name(name) {}
 SystemConcrete::SystemConcrete(float value):value(value) {}
 SystemConcrete::~SystemConcrete() {}
 
-string System :: getName() const{
+string SystemConcrete::getName() const{
     return name;
 };
 
-void System :: setName(const string name) {
+void SystemConcrete::setName(const string name) {
     this->name = name;
 }
 
-float System :: getValue() const{
+float SystemConcrete::getValue() const{
     return value;
 }
 
-void System :: setValue(float value) {
+void SystemConcrete::setValue(float value) {
     this->value = value;
 }
 
-System& System :: operator= (const System& obj) {
+System& SystemConcrete::operator= (const System& obj) {
     if(&obj == this)
         return *this;
     

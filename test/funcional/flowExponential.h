@@ -17,7 +17,7 @@
  * after running an equation for a given time
  * 
  */
-class FlowExponential : public Flow {
+class FlowExponential:public FlowConcrete {
     public:    
         /**
          * @brief Construct a new Flow Exponential object

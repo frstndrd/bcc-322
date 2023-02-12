@@ -1,12 +1,12 @@
 #include "flowLogistical.h"
 
-FlowLogistical :: FlowLogistical() {
+FlowLogistical::FlowLogistical() {
     name = "NULL";
     source = NULL;
     target = NULL;
 }
 
-FlowLogistical :: FlowLogistical(Flow &obj) {
+FlowLogistical::FlowLogistical(Flow &obj) {
     if(&obj == this)
         return;
 
@@ -15,9 +15,9 @@ FlowLogistical :: FlowLogistical(Flow &obj) {
     target = obj.getTarget();
 };
 
-FlowLogistical :: FlowLogistical(const string name, System *origin, System *target):Flow(name, origin, target) {};
-FlowLogistical :: ~FlowLogistical() {}
+FlowLogistical::FlowLogistical(const string name, System *origin, System *target):FlowConcrete(name, origin, target) {};
+FlowLogistical::~FlowLogistical() {}
 
-float FlowLogistical :: execute(){
+float FlowLogistical::execute(){
     return ((0.01 * getTarget()->getValue()) * (1 - getTarget()->getValue() / 70));
 };  

@@ -15,9 +15,9 @@ FlowExponential :: FlowExponential(Flow &obj) {
     target = obj.getTarget();
 };
 
-FlowExponential :: FlowExponential(const string name, System *source, System *target):Flow(name, source, target) {};
-FlowExponential :: ~FlowExponential() {}
+FlowExponential::FlowExponential(const string name, System *source, System *target):FlowConcrete(name, source, target) {};
+FlowExponential::~FlowExponential() {}
 
-float FlowExponential :: execute(){
+float FlowExponential::execute(){
     return getSource()->getValue() * 0.01;
 };

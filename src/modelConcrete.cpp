@@ -1,4 +1,4 @@
-#include "model.h"
+#include "modelConcrete.h"
 
 ModelConcrete::ModelConcrete() {
     name = "NULL";
@@ -46,7 +46,7 @@ ModelConcrete::itSystem ModelConcrete::getSystemEnd() {
     return systems.end();
 }
 
-intModelConcrete::getSystemSize() {
+int ModelConcrete::getSystemSize() {
     return systems.size();
 } 
 
@@ -78,7 +78,7 @@ bool ModelConcrete::remove(Flow* obj) {
     return false;
 }
 
-ModelConcrete& ModelConcrete::operator=(const Model& obj) {
+ModelConcrete& ModelConcrete::operator=(const ModelConcrete& obj) {
     if(this != &obj) {
         this->flows.clear();
         this->systems.clear();
@@ -131,10 +131,6 @@ void ModelConcrete::run(int start, int finish, int increment) {
     
 }
 
-void Model :: show() {
-    cout << endl;
-    cout << "Subsystems and their values:" << endl;
-    for (auto system : systems)
-        cout << "." << system->getName() << " " << system->getValue() << endl;
+void ModelConcrete::show() {
     cout << endl;
 }
