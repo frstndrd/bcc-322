@@ -1,0 +1,10 @@
+<map id="unit_Model_remove" name="unit_Model_remove">
+<area shape="rect" id="node1" title=" " alt="" coords="5,153,139,179"/>
+<area shape="rect" id="node2" href="$class_model.html#a70362afdd9db6268b4adaedfeddb2935" title="Add a system to the model." alt="" coords="224,5,311,31"/>
+<area shape="rect" id="node3" href="$class_model.html#a70d1a18b51f1184b56b101becefe71dc" title="Clear the model, removing all of its systems and flows." alt="" coords="221,55,314,80"/>
+<area shape="rect" id="node4" href="$class_system.html#ab4f23c21832d6bbef462a5a20b296912" title="Get the name of a system." alt="" coords="204,104,331,129"/>
+<area shape="rect" id="node5" href="$class_model.html#a9cb87020b42e3e024f555598cf7d4315" title="Get the first system of a vector." alt="" coords="187,153,348,179"/>
+<area shape="rect" id="node6" href="$class_model.html#aa3f97698d3af675a4443cf8cf1ce1018" title="Get the last system of a vector." alt="" coords="192,203,343,228"/>
+<area shape="rect" id="node7" href="$class_model.html#ac4eb8a0412f976745cde9ac1a396224e" title="Get the size of the system vector." alt="" coords="190,252,345,277"/>
+<area shape="rect" id="node8" href="$class_model.html#a9f4cb42b7c0cb3ba5cb0118bc8815de5" title="Remove a system from the model." alt="" coords="214,301,321,327"/>
+</map>

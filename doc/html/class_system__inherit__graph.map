@@ -1,0 +1,4 @@
+<map id="System" name="System">
+<area shape="rect" id="node1" title="The System Interface is the interface that defines the methods to be implemented." alt="" coords="31,5,98,31"/>
+<area shape="rect" id="node2" href="$class_system_concrete.html" title="Define the interface with the methods to be implemented." alt="" coords="5,79,124,104"/>
+</map>

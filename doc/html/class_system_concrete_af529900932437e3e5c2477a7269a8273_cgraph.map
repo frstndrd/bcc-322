@@ -1,0 +1,5 @@
+<map id="SystemConcrete::operator=" name="SystemConcrete::operator=">
+<area shape="rect" id="node1" title="Overload the &#39;=&#39; operator, cloning from one to the other." alt="" coords="5,31,188,56"/>
+<area shape="rect" id="node2" href="$class_system.html#ab4f23c21832d6bbef462a5a20b296912" title="Get the name of a system." alt="" coords="236,5,363,31"/>
+<area shape="rect" id="node3" href="$class_system.html#a176aaa3960c811dfa8421d4161656672" title="Get the value contained in a system." alt="" coords="236,55,363,80"/>
+</map>

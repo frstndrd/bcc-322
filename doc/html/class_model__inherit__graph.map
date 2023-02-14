@@ -1,0 +1,4 @@
+<map id="Model" name="Model">
+<area shape="rect" id="node1" title="This class represents the general simulation model, with all of its flows and systems." alt="" coords="31,5,89,31"/>
+<area shape="rect" id="node2" href="$class_model_concrete.html" title="Store vectors containing the name of the model and flows and systems related to it." alt="" coords="5,79,115,104"/>
+</map>

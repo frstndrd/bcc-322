@@ -1,0 +1,51 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title=" " alt="" coords="5,597,56,623"/>
+<area shape="rect" id="node2" href="$unit__flow_8cpp.html#ad22590f3fd206c1de5ae1a673917de8c" title=" " alt="" coords="113,941,251,967"/>
+<area shape="rect" id="node23" href="$unit__model_8cpp.html#ac9809e814596bf9bf3c37918190a866c" title=" " alt="" coords="109,276,255,301"/>
+<area shape="rect" id="node42" href="$unit__system_8cpp.html#ab3d9f7c3d450ff30ca9cf6b51666f701" title=" " alt="" coords="104,597,260,623"/>
+<area shape="rect" id="node3" href="$unit__flow_8cpp.html#a4b6e7371ad9b3059a32e0b1600e653a3" title=" " alt="" coords="317,1016,466,1041"/>
+<area shape="rect" id="node7" href="$unit__flow_8cpp.html#ae158212a296c723df96316c44c67a045" title=" " alt="" coords="320,868,463,893"/>
+<area shape="rect" id="node8" href="$unit__flow_8cpp.html#afde1feedc7a89ff8baf0a88d1afc35f2" title=" " alt="" coords="326,671,457,696"/>
+<area shape="rect" id="node14" href="$unit__flow_8cpp.html#a30b651e051db0b3535b2137de3b12b1c" title=" " alt="" coords="323,917,459,943"/>
+<area shape="rect" id="node15" href="$unit__flow_8cpp.html#a9ffcbd710bf5ffee61b55a88a0de70e1" title=" " alt="" coords="320,967,463,992"/>
+<area shape="rect" id="node16" href="$unit__flow_8cpp.html#a02533cf9d562b6066c02aaad9bd2450e" title=" " alt="" coords="322,1115,461,1140"/>
+<area shape="rect" id="node17" href="$unit__flow_8cpp.html#ad3ef81bd4e2b09e9aed2ba9142e891bf" title=" " alt="" coords="323,819,459,844"/>
+<area shape="rect" id="node19" href="$unit__flow_8cpp.html#a2442717bcd816291df7364fea7a84683" title=" " alt="" coords="320,1065,463,1091"/>
+<area shape="rect" id="node21" href="$unit__flow_8cpp.html#a903fcdbe21732defc84d3f8173cbaf3c" title=" " alt="" coords="322,1164,461,1189"/>
+<area shape="rect" id="node4" href="$class_flow.html#aa91a8025b6dbb27ee5137c7c9ad0c564" title="Get the name of a flow." alt="" coords="549,892,658,917"/>
+<area shape="rect" id="node5" href="$class_flow.html#abf0f3dbb285fe82e5ba6449de06b97c8" title="Get the source system for a flow." alt="" coords="545,1016,661,1041"/>
+<area shape="rect" id="node6" href="$class_flow.html#afb9b8d93ea0fc81868b8e02dd382a787" title="Get the target system for a flow." alt="" coords="548,1115,659,1140"/>
+<area shape="rect" id="node9" href="$class_model.html#a70362afdd9db6268b4adaedfeddb2935" title="Add a system to the model." alt="" coords="560,400,647,425"/>
+<area shape="rect" id="node10" href="$class_model.html#a70d1a18b51f1184b56b101becefe71dc" title="Clear the model, removing all of its systems and flows." alt="" coords="557,499,650,524"/>
+<area shape="rect" id="node11" href="$class_system.html#a176aaa3960c811dfa8421d4161656672" title="Get the value contained in a system." alt="" coords="540,696,667,721"/>
+<area shape="rect" id="node12" href="$class_model.html#abf92e0aa3048887756a0fdb280ab0e8e" title="Run the model with a start time, an end time and a set time interval between each execution." alt="" coords="562,647,645,672"/>
+<area shape="rect" id="node13" href="$class_system.html#a5a8e1fc846e3b16838c4acaa2cbf5fcf" title="Set the value contained in a system." alt="" coords="540,745,667,771"/>
+<area shape="rect" id="node18" href="$class_flow.html#a719883d550abcfcb9dfcd4a7e1b86443" title="Set the name of a flow." alt="" coords="549,819,658,844"/>
+<area shape="rect" id="node20" href="$class_flow.html#a42ce99a961622788ae59bb73abad3bb3" title="Set the source system for a flow." alt="" coords="545,1065,661,1091"/>
+<area shape="rect" id="node22" href="$class_flow.html#a6121cf6e400af1aa8b4c9f9f2dc8e68b" title="Set the target object." alt="" coords="548,1164,659,1189"/>
+<area shape="rect" id="node24" href="$unit__model_8cpp.html#a4fa06dc7ad55e19bd871ad7522304a10" title=" " alt="" coords="335,276,448,301"/>
+<area shape="rect" id="node32" href="$unit__model_8cpp.html#a531a255b0784cc02239bfe7de7f2e50a" title=" " alt="" coords="331,227,451,252"/>
+<area shape="rect" id="node33" href="$unit__model_8cpp.html#af0c874c71422ff355ec8579c9a859738" title=" " alt="" coords="313,153,470,179"/>
+<area shape="rect" id="node35" href="$unit__model_8cpp.html#ab348ace4d56947bf92a931650a17b240" title=" " alt="" coords="316,375,467,400"/>
+<area shape="rect" id="node36" href="$unit__model_8cpp.html#a4b6970410c08187f913e11e36328fa7a" title=" " alt="" coords="319,104,463,129"/>
+<area shape="rect" id="node37" href="$unit__model_8cpp.html#a84e5706c795959ab594969a0ce6aeb02" title=" " alt="" coords="325,325,458,351"/>
+<area shape="rect" id="node39" href="$unit__model_8cpp.html#a47f444f7adf42d9fe780632ef2e324d6" title=" " alt="" coords="336,424,447,449"/>
+<area shape="rect" id="node40" href="$unit__model_8cpp.html#a95716e0e77416eb95792c45661b2b777" title=" " alt="" coords="319,55,463,80"/>
+<area shape="rect" id="node25" href="$class_model.html#ab0c129a6738bbae4a15de8766323494d" title="Get the first flow of a vector." alt="" coords="532,252,675,277"/>
+<area shape="rect" id="node26" href="$class_model.html#a38b1955d070874bfdc301ecd69addcca" title="Get the last flow of a vector." alt="" coords="537,203,670,228"/>
+<area shape="rect" id="node27" href="$class_model.html#a7e7b0c2a71f4885ef268a88d225efc57" title="Get the size of the flow vector." alt="" coords="535,104,671,129"/>
+<area shape="rect" id="node28" href="$class_system.html#ab4f23c21832d6bbef462a5a20b296912" title="Get the name of a system." alt="" coords="540,548,667,573"/>
+<area shape="rect" id="node29" href="$class_model.html#a9cb87020b42e3e024f555598cf7d4315" title="Get the first system of a vector." alt="" coords="523,351,684,376"/>
+<area shape="rect" id="node30" href="$class_model.html#aa3f97698d3af675a4443cf8cf1ce1018" title="Get the last system of a vector." alt="" coords="528,301,679,327"/>
+<area shape="rect" id="node31" href="$class_model.html#ac4eb8a0412f976745cde9ac1a396224e" title="Get the size of the system vector." alt="" coords="526,153,681,179"/>
+<area shape="rect" id="node34" href="$class_model.html#aa5365ab557ae47efffdf14ba7a46dac8" title="Get the name of a model." alt="" coords="545,55,662,80"/>
+<area shape="rect" id="node38" href="$class_model.html#a9f4cb42b7c0cb3ba5cb0118bc8815de5" title="Remove a system from the model." alt="" coords="550,449,657,475"/>
+<area shape="rect" id="node41" href="$class_model.html#ad560875016688b7785bdbd0ef1a07d7a" title="Set the name of a model." alt="" coords="545,5,662,31"/>
+<area shape="rect" id="node43" href="$unit__system_8cpp.html#a46e097a8a45f48d72634c5dff1f7ca5f" title=" " alt="" coords="308,621,475,647"/>
+<area shape="rect" id="node44" href="$unit__system_8cpp.html#a6102352f9630ddcf12eb94bc4b558bc1" title=" " alt="" coords="311,523,471,548"/>
+<area shape="rect" id="node45" href="$unit__system_8cpp.html#ac5707e927092753fdf9ffb275f209466" title=" " alt="" coords="314,473,469,499"/>
+<area shape="rect" id="node46" href="$unit__system_8cpp.html#adeeb73fcb3ab0a36610f3740f85b6eae" title=" " alt="" coords="315,720,468,745"/>
+<area shape="rect" id="node47" href="$unit__system_8cpp.html#ae92753cb0977ecd3217dc3540dc33e87" title=" " alt="" coords="314,572,469,597"/>
+<area shape="rect" id="node49" href="$unit__system_8cpp.html#a0e0a4c0513e1dbf6487920465ce62b22" title=" " alt="" coords="315,769,468,795"/>
+<area shape="rect" id="node48" href="$class_system.html#a3108cd4b50d2ac81daa100b627c3b188" title="Set the name of a system." alt="" coords="540,597,667,623"/>
+</map>

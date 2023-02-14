@@ -1,0 +1,4 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_model.html" title="This class represents the general simulation model, with all of its flows and systems." alt="" coords="5,5,63,31"/>
+<area shape="rect" id="node2" href="$class_model_concrete.html" title="Store vectors containing the name of the model and flows and systems related to it." alt="" coords="111,5,220,31"/>
+</map>
