@@ -6,7 +6,6 @@
 #include <cstring>
 #include <assert.h>
 #include "../../src/systemConcrete.h"
-#include "../../src/system.h"
 
 void unit_System_constructor(void);
 void unit_System_destructor(void);

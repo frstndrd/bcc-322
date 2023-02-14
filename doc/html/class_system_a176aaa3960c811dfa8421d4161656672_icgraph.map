@@ -1,5 +1,5 @@
 <map id="System::getValue" name="System::getValue">
-<area shape="rect" id="node1" title=" " alt="" coords="580,277,707,303"/>
+<area shape="rect" id="node1" title="Get the value contained in a system." alt="" coords="580,277,707,303"/>
 <area shape="rect" id="node2" href="$funcional__tests_8cpp.html#a943dfe0c597a01c9760c140715fed527" title="Run the complex test, with multiple systems and flows." alt="" coords="344,5,496,31"/>
 <area shape="rect" id="node4" href="$class_flow_exponential.html#a7b96152696b816d634ce62b6871ecbf9" title="Run the flow&#39;s equation." alt="" coords="335,55,505,80"/>
 <area shape="rect" id="node5" href="$funcional__tests_8cpp.html#a2c448ffaffdff4b03c825a01dffa6f27" title="Run the exponential test." alt="" coords="335,104,505,129"/>

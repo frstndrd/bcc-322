@@ -12,8 +12,6 @@
 #include <cstring>
 #include <ostream>
 #include <vector>
-#include "flow.h"
-#include "system.h"
 #include "model.h"
 
 /**

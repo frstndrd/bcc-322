@@ -1,5 +1,5 @@
 <map id="System::getName" name="System::getName">
-<area shape="rect" id="node1" title=" " alt="" coords="580,153,707,179"/>
+<area shape="rect" id="node1" title="Get the name of a system." alt="" coords="580,153,707,179"/>
 <area shape="rect" id="node2" href="$class_system_concrete.html#af529900932437e3e5c2477a7269a8273" title="Overload the &#39;=&#39; operator, cloning from one to the other." alt="" coords="329,5,511,31"/>
 <area shape="rect" id="node3" href="$class_system_concrete.html#a3aa930c41d116a56fc690420cc1f2cb4" title="Copy a System object." alt="" coords="308,55,532,80"/>
 <area shape="rect" id="node4" href="$unit__model_8cpp.html#a4fa06dc7ad55e19bd871ad7522304a10" title=" " alt="" coords="363,104,477,129"/>

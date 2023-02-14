@@ -1,19 +1,16 @@
 <map id="src/flowConcrete.h" name="src/flowConcrete.h">
-<area shape="rect" id="node1" title="Contains the proper implementation of the flow class." alt="" coords="473,5,603,31"/>
-<area shape="rect" id="node2" href="$flow_concrete_8cpp.html" title=" " alt="" coords="29,79,172,104"/>
-<area shape="rect" id="node3" href="$flow_exponential_8h.html" title="Contains the code necessary to run the functional exponential tests." alt="" coords="465,152,611,177"/>
-<area shape="rect" id="node5" href="$funcional__tests_8h.html" title="Runs the functional tests." alt="" coords="95,225,250,265"/>
-<area shape="rect" id="node8" href="$unit__flow_8h.html" title=" " alt="" coords="637,233,772,258"/>
-<area shape="rect" id="node11" href="$unit__model_8h.html" title=" " alt="" coords="797,233,943,258"/>
-<area shape="rect" id="node13" href="$flow_logistical_8h.html" title=" " alt="" coords="687,152,819,177"/>
-<area shape="rect" id="node15" href="$model_8h.html" title="Contains the public methods of the model (simulation) class." alt="" coords="325,79,415,104"/>
-<area shape="rect" id="node4" href="$flow_exponential_8cpp.html" title=" " alt="" coords="455,233,613,258"/>
-<area shape="rect" id="node6" href="$funcional__tests_8cpp.html" title=" " alt="" coords="186,313,341,353"/>
-<area shape="rect" id="node7" href="$funcional_2main_8cpp.html" title=" " alt="" coords="5,321,161,346"/>
-<area shape="rect" id="node9" href="$unit_2main_8cpp.html" title=" " alt="" coords="721,321,848,346"/>
-<area shape="rect" id="node10" href="$unit__flow_8cpp.html" title=" " alt="" coords="549,321,697,346"/>
-<area shape="rect" id="node12" href="$unit__model_8cpp.html" title=" " alt="" coords="872,321,1033,346"/>
-<area shape="rect" id="node14" href="$flow_logistical_8cpp.html" title=" " alt="" coords="967,233,1114,258"/>
-<area shape="rect" id="node16" href="$model_concrete_8h.html" title="Contains the implementation per se of the simulation model." alt="" coords="299,152,441,177"/>
-<area shape="rect" id="node17" href="$model_concrete_8cpp.html" title=" " alt="" coords="275,233,431,258"/>
+<area shape="rect" id="node1" title="Contains the proper implementation of the flow class." alt="" coords="449,5,579,31"/>
+<area shape="rect" id="node2" href="$flow_concrete_8cpp.html" title=" " alt="" coords="124,79,267,104"/>
+<area shape="rect" id="node3" href="$flow_exponential_8h.html" title="Contains the code necessary to run the functional exponential tests." alt="" coords="343,79,547,104"/>
+<area shape="rect" id="node5" href="$funcional__tests_8h.html" title="Runs the functional tests." alt="" coords="95,152,250,192"/>
+<area shape="rect" id="node8" href="$unit__flow_8h.html" title=" " alt="" coords="517,159,652,185"/>
+<area shape="rect" id="node11" href="$unit__model_8h.html" title=" " alt="" coords="906,159,1053,185"/>
+<area shape="rect" id="node13" href="$flow_logistical_8h.html" title=" " alt="" coords="623,79,813,104"/>
+<area shape="rect" id="node4" href="$flow_exponential_8cpp.html" title=" " alt="" coords="274,159,493,185"/>
+<area shape="rect" id="node6" href="$funcional__tests_8cpp.html" title=" " alt="" coords="186,240,341,280"/>
+<area shape="rect" id="node7" href="$funcional_2main_8cpp.html" title=" " alt="" coords="5,247,161,273"/>
+<area shape="rect" id="node9" href="$unit_2main_8cpp.html" title=" " alt="" coords="716,247,843,273"/>
+<area shape="rect" id="node10" href="$unit__flow_8cpp.html" title=" " alt="" coords="511,247,659,273"/>
+<area shape="rect" id="node12" href="$unit__model_8cpp.html" title=" " alt="" coords="899,247,1060,273"/>
+<area shape="rect" id="node14" href="$flow_logistical_8cpp.html" title=" " alt="" coords="677,159,882,185"/>
 </map>

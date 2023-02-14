@@ -66,7 +66,7 @@ class Flow {
          * @brief Overload the '=' operator in order to "clone" a flow
          * 
          * @param obj being the flow that's gonna be cloned
-         * @return Flow& A flow object is returned identical to the one that was cloned
+         * @return Flow& A flow object is returned identical to the one that was passed as a parameter
          */
         virtual Flow &operator= (const Flow &obj) = 0;
         /**

@@ -2,6 +2,6 @@
 <area shape="rect" id="node1" title=" " alt="" coords="5,80,116,105"/>
 <area shape="rect" id="node2" href="$class_model.html#a70362afdd9db6268b4adaedfeddb2935" title="Add a system to the model." alt="" coords="184,5,271,31"/>
 <area shape="rect" id="node3" href="$class_model.html#a70d1a18b51f1184b56b101becefe71dc" title="Clear the model, removing all of its systems and flows." alt="" coords="181,55,274,80"/>
-<area shape="rect" id="node4" href="$class_system.html#a176aaa3960c811dfa8421d4161656672" title=" " alt="" coords="164,104,291,129"/>
+<area shape="rect" id="node4" href="$class_system.html#a176aaa3960c811dfa8421d4161656672" title="Get the value contained in a system." alt="" coords="164,104,291,129"/>
 <area shape="rect" id="node5" href="$class_model.html#abf92e0aa3048887756a0fdb280ab0e8e" title="Run the model with a start time, an end time and a set time interval between each execution." alt="" coords="186,153,269,179"/>
 </map>

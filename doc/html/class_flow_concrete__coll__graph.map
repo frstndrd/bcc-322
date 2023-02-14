@@ -1,5 +1,5 @@
 <map id="FlowConcrete" name="FlowConcrete">
 <area shape="rect" id="node1" title="Define the interface with the methods to be implemented." alt="" coords="21,108,122,133"/>
 <area shape="rect" id="node2" href="$class_flow.html" title="The Flow Interface is the interface that defines the methods to be implemented." alt="" coords="5,5,55,31"/>
-<area shape="rect" id="node3" href="$class_system.html" title=" " alt="" coords="79,5,146,31"/>
+<area shape="rect" id="node3" href="$class_system.html" title="The System Interface is the interface that defines the methods to be implemented." alt="" coords="79,5,146,31"/>
 </map>

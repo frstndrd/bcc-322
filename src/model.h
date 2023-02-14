@@ -13,9 +13,6 @@
 #include <ostream>
 #include <vector>
 #include "flow.h"
-#include "flowConcrete.h"
-#include "system.h"
-#include "systemConcrete.h"
 
 using namespace std;
 

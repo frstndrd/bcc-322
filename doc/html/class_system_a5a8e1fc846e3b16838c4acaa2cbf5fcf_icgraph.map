@@ -1,5 +1,5 @@
 <map id="System::setValue" name="System::setValue">
-<area shape="rect" id="node1" title=" " alt="" coords="509,55,636,80"/>
+<area shape="rect" id="node1" title="Set the value contained in a system." alt="" coords="509,55,636,80"/>
 <area shape="rect" id="node2" href="$class_model_concrete.html#a9ec032c3d35800344df855739ee9d695" title="Execute the model based on initial time, end time and time intervals." alt="" coords="317,5,452,31"/>
 <area shape="rect" id="node3" href="$unit__flow_8cpp.html#afde1feedc7a89ff8baf0a88d1afc35f2" title=" " alt="" coords="319,55,450,80"/>
 <area shape="rect" id="node6" href="$unit__system_8cpp.html#a0e0a4c0513e1dbf6487920465ce62b22" title=" " alt="" coords="308,104,461,129"/>

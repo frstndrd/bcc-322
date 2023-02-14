@@ -5,9 +5,8 @@
 #include <cmath>
 #include <cstring>
 #include <assert.h>
-#include "../../src/flowExponential.h"
-#include "../../src/flowLogistical.h"
-#include "../../src/flow.h"
+#include "../funcional/flowExponential.h"
+#include "../funcional/flowLogistical.h"
 #include "../../src/flowConcrete.h"
 #include "../../src/systemConcrete.h"
 #include "../../src/modelConcrete.h"
