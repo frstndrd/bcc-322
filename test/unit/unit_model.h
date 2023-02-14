@@ -8,8 +8,8 @@
 #include "../../src/flowConcrete.h"
 #include "../../src/systemConcrete.h"
 #include "../../src/modelConcrete.h"
-#include "../../src/flowExponential.h"
-#include "../../src/flowLogistical.h"
+#include "../funcional/flowExponential.h"
+#include "../funcional/flowLogistical.h"
 
 void unit_Model_constructor(void);
 void unit_Model_destructor(void);

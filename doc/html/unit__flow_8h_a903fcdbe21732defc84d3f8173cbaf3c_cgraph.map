@@ -1,5 +1,0 @@
-<map id="unit_Flow_setTarget" name="unit_Flow_setTarget">
-<area shape="rect" id="node1" title=" " alt="" coords="5,31,144,56"/>
-<area shape="rect" id="node2" href="$class_flow.html#afb9b8d93ea0fc81868b8e02dd382a787" title="Get the target system for a flow." alt="" coords="192,5,303,31"/>
-<area shape="rect" id="node3" href="$class_flow.html#a6121cf6e400af1aa8b4c9f9f2dc8e68b" title="Set the target object." alt="" coords="192,55,303,80"/>
-</map>

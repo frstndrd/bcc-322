@@ -1,6 +1,0 @@
-<map id="unit_Flow_constructor" name="unit_Flow_constructor">
-<area shape="rect" id="node1" title=" " alt="" coords="5,55,155,80"/>
-<area shape="rect" id="node2" href="$class_flow.html#aa91a8025b6dbb27ee5137c7c9ad0c564" title="Get the name of a flow." alt="" coords="206,5,315,31"/>
-<area shape="rect" id="node3" href="$class_flow.html#abf0f3dbb285fe82e5ba6449de06b97c8" title="Get the source system for a flow." alt="" coords="203,55,319,80"/>
-<area shape="rect" id="node4" href="$class_flow.html#afb9b8d93ea0fc81868b8e02dd382a787" title="Get the target system for a flow." alt="" coords="205,104,316,129"/>
-</map>
