@@ -4,14 +4,12 @@ Development of a C++ framework for the construction of simulations based on syst
 
 ### Compiling and running the functional tests
 ```
-make all_funcional
-make run_funcional
+make runFunctional
 ```
 
 ### Compiling and running the unitary tests
 ```
-make all_unit
-make run_unit
+make runUnit
 ```
 
 ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
