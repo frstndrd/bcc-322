@@ -38,10 +38,56 @@ class Model {
          */
         typedef typename vector<System*>::iterator itSystem;
         /**
+         * @brief createModel: Model Factory
+         * @param model_name: model name - type: string
+         * @return Model *
+         */
+        static Model* createModel(const string& name = "");
+        /**
+         * @brief createModel: Model Factory
+         * @return Model *
+         */
+        /**
+         * @brief Create a System object.
+         * 
+         * @param name System's name.
+         * @param value System's value.
+         * @return System* System set.
+         */
+        virtual System* createSystem(
+            const string& name = "",
+            const double& value = 0
+        ) = 0;
+        /**
+         * @brief FLOW_IMP template for Flow Factory
+         * 
+         */
+        template <typename FLOW_IMP>
+        /**
+         * @brief createFlow: Flow Factory
+         * 
+         * @param flowName being the string that names a flow
+         * @param source being the pointer to a system that will act as a source for the operations of the flow
+         * @param target being the pointer to a system that will act as a recipient for the operations of the flow
+         * 
+         * @return Flow *
+         */
+        Flow *createFlow(string flowName = "", System *source = nullptr, System *target = nullptr) {
+            Flow *flow = new FLOW_IMP(flowName, source, target);
+            add(flow);
+            return flow;
+        }
+        template<typename FLOW_IMP>
+        void destroyFlow(Flow* f) {
+            remove(f);
+            delete static_cast<FLOW_IMP*>(f);
+        }
+
+        /**
          * @brief Get the name of a model
          * 
          * @return string containing the name of the model
-         */
+         */       
         virtual string getName() const = 0;
         /**
          * @brief Set the name of a model

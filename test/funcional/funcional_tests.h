@@ -7,9 +7,8 @@
  * 
  */
 
-#include "../../src/modelConcrete.h"
-#include "../../src/systemConcrete.h"
 #include "../../src/flowConcrete.h"
+#include "../../src/model.h"
 #include "flowExponential.h"
 #include "flowLogistical.h"
 

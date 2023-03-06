@@ -13,6 +13,7 @@
 #include <ostream>
 #include <vector>
 #include "model.h"
+#include "systemConcrete.h"
 
 /**
  * @brief Store vectors containing the name of the model and flows and systems related to it
@@ -88,11 +89,16 @@ class ModelConcrete:public Model{
          */
         typedef typename vector<System*> :: iterator itSystem;
         
+        static Model* createModel(const string& name);
         /**
-         * @brief Get the Name object
-         * 
-         * @return string The name of a model
+         * @brief createModel: Model Factory
+         * @return Model *
          */
+        static Model *createModel();
+
+        System* createSystem(const string& name, const double& value);
+
+
         string getName() const;
         /**
          * @brief Set the Name object

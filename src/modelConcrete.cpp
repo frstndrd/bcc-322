@@ -1,5 +1,7 @@
 #include "modelConcrete.h"
 
+static vector<Model*> models;
+
 ModelConcrete::ModelConcrete() {
     name = "NULL";
     flows.clear();
@@ -17,6 +19,30 @@ ModelConcrete::ModelConcrete(Model &obj) {
 }
 
 ModelConcrete::~ModelConcrete() {}
+
+Model* Model::createModel(const string& id) {
+    return ModelConcrete::createModel(id);
+}
+
+Model* ModelConcrete::createModel(const string& name) {
+    Model* model = new ModelConcrete(name);
+    models.push_back(model);
+
+    return model;
+}
+
+System* ModelConcrete::createSystem(
+    const string& name = "",
+    const double& value = 0
+) {
+    System* system = new SystemConcrete();
+    system->setName(name);
+    system->setValue(value);
+    
+    this->add(system);
+
+    return system;
+}
 
 string ModelConcrete::getName() const{
     return name;

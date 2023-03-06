@@ -1,0 +1,11 @@
+digraph "Model::createFlow"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [label="Model::createFlow",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="FLOW_IMP template for Flow Factory."];
+  Node1 -> Node2 [color="steelblue1",style="solid"];
+  Node2 [label="Model::add",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_model.html#a70362afdd9db6268b4adaedfeddb2935",tooltip="Add a system to the model."];
+}

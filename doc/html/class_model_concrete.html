@@ -72,6 +72,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_model_concrete-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">ModelConcrete Class Reference</div></div>
@@ -131,8 +132,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3953a3336c563ad2628e337ffc7291ab"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_concrete.html#a3953a3336c563ad2628e337ffc7291ab">~ModelConcrete</a> ()</td></tr>
 <tr class="memdesc:a3953a3336c563ad2628e337ffc7291ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the <a class="el" href="class_model.html" title="This class represents the general simulation model, with all of its flows and systems.">Model</a> object.  <br /></td></tr>
 <tr class="separator:a3953a3336c563ad2628e337ffc7291ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85b5d3b7cca709d88027cfb0847ef7e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_system.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_concrete.html#a85b5d3b7cca709d88027cfb0847ef7e5">createSystem</a> (const string &amp;<a class="el" href="class_model_concrete.html#a9a30b53f82b44cec28e619045a80be35">name</a>, const double &amp;value)</td></tr>
+<tr class="memdesc:a85b5d3b7cca709d88027cfb0847ef7e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">createModel: <a class="el" href="class_model.html" title="This class represents the general simulation model, with all of its flows and systems.">Model</a> Factory  <br /></td></tr>
+<tr class="separator:a85b5d3b7cca709d88027cfb0847ef7e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6649ebf1f767bd44897f709944cb2505"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_concrete.html#a6649ebf1f767bd44897f709944cb2505">getName</a> () const</td></tr>
-<tr class="memdesc:a6649ebf1f767bd44897f709944cb2505"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Name object.  <br /></td></tr>
+<tr class="memdesc:a6649ebf1f767bd44897f709944cb2505"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of a model.  <br /></td></tr>
 <tr class="separator:a6649ebf1f767bd44897f709944cb2505"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a681c8154b3b5ec8f4a5e5ba8c8c89df8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_concrete.html#a681c8154b3b5ec8f4a5e5ba8c8c89df8">setName</a> (const string <a class="el" href="class_model_concrete.html#a9a30b53f82b44cec28e619045a80be35">name</a>)</td></tr>
 <tr class="memdesc:a681c8154b3b5ec8f4a5e5ba8c8c89df8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Name object.  <br /></td></tr>
@@ -180,6 +184,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af032d8433c87a0a3a431faf6563a1f03 inherit pub_methods_class_model"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#af032d8433c87a0a3a431faf6563a1f03">~Model</a> ()</td></tr>
 <tr class="memdesc:af032d8433c87a0a3a431faf6563a1f03 inherit pub_methods_class_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">A virtual destructor of the class.  <br /></td></tr>
 <tr class="separator:af032d8433c87a0a3a431faf6563a1f03 inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93d32a987f27e9c2ce6d4e23fef4d390 inherit pub_methods_class_model"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_system.html">System</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a93d32a987f27e9c2ce6d4e23fef4d390">createSystem</a> (const string &amp;name=&quot;&quot;, const double &amp;value=0)=0</td></tr>
+<tr class="memdesc:a93d32a987f27e9c2ce6d4e23fef4d390 inherit pub_methods_class_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">createModel: <a class="el" href="class_model.html" title="This class represents the general simulation model, with all of its flows and systems.">Model</a> Factory  <br /></td></tr>
+<tr class="separator:a93d32a987f27e9c2ce6d4e23fef4d390 inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fe21a0b4c870e27397b28ba3cd57d80 inherit pub_methods_class_model"><td class="memTemplParams" colspan="2">template&lt;typename FLOW_IMP &gt; </td></tr>
+<tr class="memitem:a8fe21a0b4c870e27397b28ba3cd57d80 inherit pub_methods_class_model"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_flow.html">Flow</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_model.html#a8fe21a0b4c870e27397b28ba3cd57d80">createFlow</a> (string flowName=&quot;&quot;, <a class="el" href="class_system.html">System</a> *source=nullptr, <a class="el" href="class_system.html">System</a> *target=nullptr)</td></tr>
+<tr class="memdesc:a8fe21a0b4c870e27397b28ba3cd57d80 inherit pub_methods_class_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">FLOW_IMP template for <a class="el" href="class_flow.html" title="The Flow Interface is the interface that defines the methods to be implemented.">Flow</a> Factory.  <br /></td></tr>
+<tr class="separator:a8fe21a0b4c870e27397b28ba3cd57d80 inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fe88863ffe6b8ab26fe26fc1f419094 inherit pub_methods_class_model"><td class="memTemplParams" colspan="2">template&lt;typename FLOW_IMP &gt; </td></tr>
+<tr class="memitem:a6fe88863ffe6b8ab26fe26fc1f419094 inherit pub_methods_class_model"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_model.html#a6fe88863ffe6b8ab26fe26fc1f419094">destroyFlow</a> (<a class="el" href="class_flow.html">Flow</a> *f)</td></tr>
+<tr class="separator:a6fe88863ffe6b8ab26fe26fc1f419094 inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5365ab557ae47efffdf14ba7a46dac8 inherit pub_methods_class_model"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#aa5365ab557ae47efffdf14ba7a46dac8">getName</a> () const =0</td></tr>
 <tr class="memdesc:aa5365ab557ae47efffdf14ba7a46dac8 inherit pub_methods_class_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of a model.  <br /></td></tr>
 <tr class="separator:aa5365ab557ae47efffdf14ba7a46dac8 inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -225,6 +239,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abf92e0aa3048887756a0fdb280ab0e8e inherit pub_methods_class_model"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#abf92e0aa3048887756a0fdb280ab0e8e">run</a> (int, int, int)=0</td></tr>
 <tr class="memdesc:abf92e0aa3048887756a0fdb280ab0e8e inherit pub_methods_class_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run the model with a start time, an end time and a set time interval between each execution.  <br /></td></tr>
 <tr class="separator:abf92e0aa3048887756a0fdb280ab0e8e inherit pub_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a16d4f95c672c9eee60327ba1010ae2a2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_model.html">Model</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_concrete.html#a16d4f95c672c9eee60327ba1010ae2a2">createModel</a> (const string &amp;<a class="el" href="class_model_concrete.html#a9a30b53f82b44cec28e619045a80be35">name</a>)</td></tr>
+<tr class="separator:a16d4f95c672c9eee60327ba1010ae2a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c9fe6f1ded9e876c4548d915183f385"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_model.html">Model</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model_concrete.html#a6c9fe6f1ded9e876c4548d915183f385">createModel</a> ()</td></tr>
+<tr class="memdesc:a6c9fe6f1ded9e876c4548d915183f385"><td class="mdescLeft">&#160;</td><td class="mdescRight">createModel: <a class="el" href="class_model.html" title="This class represents the general simulation model, with all of its flows and systems.">Model</a> Factory  <br /></td></tr>
+<tr class="separator:a6c9fe6f1ded9e876c4548d915183f385"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_class_model"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_model')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="class_model.html">Model</a></td></tr>
+<tr class="memitem:a761d898cd7975e92719915f122330886 inherit pub_static_methods_class_model"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_model.html">Model</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#a761d898cd7975e92719915f122330886">createModel</a> (const string &amp;name=&quot;&quot;)</td></tr>
+<tr class="memdesc:a761d898cd7975e92719915f122330886 inherit pub_static_methods_class_model"><td class="mdescLeft">&#160;</td><td class="mdescRight">createModel: <a class="el" href="class_model.html" title="This class represents the general simulation model, with all of its flows and systems.">Model</a> Factory  <br /></td></tr>
+<tr class="separator:a761d898cd7975e92719915f122330886 inherit pub_static_methods_class_model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -290,6 +316,15 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Empty constructor of the class. </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_concrete_a79beba14ba3670fdcbd4587df5afdec3_icgraph.png" border="0" usemap="#aclass_model_concrete_a79beba14ba3670fdcbd4587df5afdec3_icgraph" alt=""/></div>
+<map name="aclass_model_concrete_a79beba14ba3670fdcbd4587df5afdec3_icgraph" id="aclass_model_concrete_a79beba14ba3670fdcbd4587df5afdec3_icgraph">
+<area shape="rect" title="Empty constructor of the class." alt="" coords="241,5,445,31"/>
+<area shape="rect" href="class_model_concrete.html#a16d4f95c672c9eee60327ba1010ae2a2" title=" " alt="" coords="5,5,193,31"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -460,6 +495,15 @@ Protected Attributes</h2></td></tr>
 </dl>
 
 <p>Implements <a class="el" href="class_model.html#a70362afdd9db6268b4adaedfeddb2935">Model</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_concrete_ab4575e86ec5450e623f3a74d6f395be9_icgraph.png" border="0" usemap="#aclass_model_concrete_ab4575e86ec5450e623f3a74d6f395be9_icgraph" alt=""/></div>
+<map name="aclass_model_concrete_ab4575e86ec5450e623f3a74d6f395be9_icgraph" id="aclass_model_concrete_ab4575e86ec5450e623f3a74d6f395be9_icgraph">
+<area shape="rect" title="Add a system to the model." alt="" coords="252,5,391,31"/>
+<area shape="rect" href="class_model_concrete.html#a85b5d3b7cca709d88027cfb0847ef7e5" title="createModel: Model Factory" alt="" coords="5,5,204,31"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -489,6 +533,143 @@ Protected Attributes</h2></td></tr>
 <p>Clean the model. </p>
 
 <p>Implements <a class="el" href="class_model.html#a70d1a18b51f1184b56b101becefe71dc">Model</a>.</p>
+
+</div>
+</div>
+<a id="a6c9fe6f1ded9e876c4548d915183f385" name="a6c9fe6f1ded9e876c4548d915183f385"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c9fe6f1ded9e876c4548d915183f385">&#9670;&#160;</a></span>createModel() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_model.html">Model</a> * ModelConcrete::createModel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>createModel: <a class="el" href="class_model.html" title="This class represents the general simulation model, with all of its flows and systems.">Model</a> Factory </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_model.html" title="This class represents the general simulation model, with all of its flows and systems.">Model</a> * </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_concrete_a6c9fe6f1ded9e876c4548d915183f385_icgraph.png" border="0" usemap="#aclass_model_concrete_a6c9fe6f1ded9e876c4548d915183f385_icgraph" alt=""/></div>
+<map name="aclass_model_concrete_a6c9fe6f1ded9e876c4548d915183f385_icgraph" id="aclass_model_concrete_a6c9fe6f1ded9e876c4548d915183f385_icgraph">
+<area shape="rect" title="createModel: Model Factory" alt="" coords="505,55,693,80"/>
+<area shape="rect" href="class_model.html#a761d898cd7975e92719915f122330886" title="createModel: Model Factory" alt="" coords="321,55,457,80"/>
+<area shape="rect" href="funcional__tests_8cpp.html#a943dfe0c597a01c9760c140715fed527" title="Run the complex test, with multiple systems and flows." alt="" coords="113,5,265,31"/>
+<area shape="rect" href="funcional__tests_8cpp.html#a2c448ffaffdff4b03c825a01dffa6f27" title="Run the exponential test." alt="" coords="104,55,273,80"/>
+<area shape="rect" href="funcional__tests_8cpp.html#a60914db64bde71b56d69320797266c29" title="Run the logistical test." alt="" coords="111,104,266,129"/>
+<area shape="rect" href="funcional_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,55,56,80"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a16d4f95c672c9eee60327ba1010ae2a2" name="a16d4f95c672c9eee60327ba1010ae2a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16d4f95c672c9eee60327ba1010ae2a2">&#9670;&#160;</a></span>createModel() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_model.html">Model</a> * ModelConcrete::createModel </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_concrete_a16d4f95c672c9eee60327ba1010ae2a2_cgraph.png" border="0" usemap="#aclass_model_concrete_a16d4f95c672c9eee60327ba1010ae2a2_cgraph" alt=""/></div>
+<map name="aclass_model_concrete_a16d4f95c672c9eee60327ba1010ae2a2_cgraph" id="aclass_model_concrete_a16d4f95c672c9eee60327ba1010ae2a2_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,193,31"/>
+<area shape="rect" href="class_model_concrete.html#a79beba14ba3670fdcbd4587df5afdec3" title="Empty constructor of the class." alt="" coords="241,5,445,31"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a85b5d3b7cca709d88027cfb0847ef7e5" name="a85b5d3b7cca709d88027cfb0847ef7e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85b5d3b7cca709d88027cfb0847ef7e5">&#9670;&#160;</a></span>createSystem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_system.html">System</a> * ModelConcrete::createSystem </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>createModel: <a class="el" href="class_model.html" title="This class represents the general simulation model, with all of its flows and systems.">Model</a> Factory </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_model.html" title="This class represents the general simulation model, with all of its flows and systems.">Model</a> *</dd></dl>
+<p>Create a <a class="el" href="class_system.html" title="The System Interface is the interface that defines the methods to be implemented.">System</a> object.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td><a class="el" href="class_system.html" title="The System Interface is the interface that defines the methods to be implemented.">System</a>'s name. </td></tr>
+    <tr><td class="paramname">value</td><td><a class="el" href="class_system.html" title="The System Interface is the interface that defines the methods to be implemented.">System</a>'s value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>System* <a class="el" href="class_system.html" title="The System Interface is the interface that defines the methods to be implemented.">System</a> set. </dd></dl>
+
+<p>Implements <a class="el" href="class_model.html#a93d32a987f27e9c2ce6d4e23fef4d390">Model</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_model_concrete_a85b5d3b7cca709d88027cfb0847ef7e5_cgraph.png" border="0" usemap="#aclass_model_concrete_a85b5d3b7cca709d88027cfb0847ef7e5_cgraph" alt=""/></div>
+<map name="aclass_model_concrete_a85b5d3b7cca709d88027cfb0847ef7e5_cgraph" id="aclass_model_concrete_a85b5d3b7cca709d88027cfb0847ef7e5_cgraph">
+<area shape="rect" title="createModel: Model Factory" alt="" coords="5,55,204,80"/>
+<area shape="rect" href="class_model_concrete.html#ab4575e86ec5450e623f3a74d6f395be9" title="Add a system to the model." alt="" coords="252,5,391,31"/>
+<area shape="rect" href="class_system.html#a3108cd4b50d2ac81daa100b627c3b188" title="Set the name of a system." alt="" coords="258,55,385,80"/>
+<area shape="rect" href="class_system.html#a5a8e1fc846e3b16838c4acaa2cbf5fcf" title="Set the value contained in a system." alt="" coords="258,104,385,129"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -605,8 +786,8 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get the Name object. </p>
-<dl class="section return"><dt>Returns</dt><dd>string The name of a model </dd></dl>
+<p>Get the name of a model. </p>
+<dl class="section return"><dt>Returns</dt><dd>string containing the name of the model </dd></dl>
 
 <p>Implements <a class="el" href="class_model.html#aa5365ab557ae47efffdf14ba7a46dac8">Model</a>.</p>
 

@@ -8,9 +8,9 @@
 
 int main() {
     exponentialFuncionalTest();
-    cout << "[+] Exponential test: " << GRN << "OK!" << RESET;
+    cout << "[+] Exponential test: " << GRN << "OK!" << RESET << endl;
     logisticalFuncionalTest();
-    cout << "[+] Logistical test: " << GRN << "OK!" << RESET;
+    cout << "[+] Logistical test: " << GRN << "OK!" << RESET << endl;
     complexFuncionalTest();
     cout << "[+] Complex test: " << GRN << "OK!\n\n" << RESET;
     return 0;

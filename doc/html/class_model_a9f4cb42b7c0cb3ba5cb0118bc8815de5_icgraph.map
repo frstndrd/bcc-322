@@ -1,6 +1,7 @@
 <map id="Model::remove" name="Model::remove">
-<area shape="rect" id="node1" title="Remove a system from the model." alt="" coords="480,5,587,31"/>
-<area shape="rect" id="node2" href="$unit__model_8cpp.html#a84e5706c795959ab594969a0ce6aeb02" title=" " alt="" coords="299,5,432,31"/>
-<area shape="rect" id="node3" href="$unit__model_8cpp.html#ac9809e814596bf9bf3c37918190a866c" title=" " alt="" coords="104,5,251,31"/>
-<area shape="rect" id="node4" href="$unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,31"/>
+<area shape="rect" id="node1" title="Remove a system from the model." alt="" coords="481,31,588,56"/>
+<area shape="rect" id="node2" href="$class_model.html#a6fe88863ffe6b8ab26fe26fc1f419094" title=" " alt="" coords="299,5,433,31"/>
+<area shape="rect" id="node3" href="$unit__model_8cpp.html#a84e5706c795959ab594969a0ce6aeb02" title=" " alt="" coords="299,55,433,80"/>
+<area shape="rect" id="node4" href="$unit__model_8cpp.html#ac9809e814596bf9bf3c37918190a866c" title=" " alt="" coords="104,55,251,80"/>
+<area shape="rect" id="node5" href="$unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,55,56,80"/>
 </map>

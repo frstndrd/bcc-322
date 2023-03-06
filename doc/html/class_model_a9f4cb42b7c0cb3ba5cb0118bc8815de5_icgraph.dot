@@ -1,0 +1,17 @@
+digraph "Model::remove"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="Model::remove",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Remove a system from the model."];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="Model::destroyFlow",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_model.html#a6fe88863ffe6b8ab26fe26fc1f419094",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="unit_Model_remove",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$unit__model_8cpp.html#a84e5706c795959ab594969a0ce6aeb02",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="steelblue1",style="solid"];
+  Node4 [label="run_unit_tests_Model",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$unit__model_8cpp.html#ac9809e814596bf9bf3c37918190a866c",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="steelblue1",style="solid"];
+  Node5 [label="main",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",tooltip=" "];
+}
