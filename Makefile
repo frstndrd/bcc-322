@@ -25,6 +25,7 @@ runFunctional:
 
 runUnit:
 	@cls
+	@make API
 	@make unit
 	@cd bin && unit.exe
 	@make clean
